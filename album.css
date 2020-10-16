@@ -1,0 +1,500 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  --green: #1a3c34;
+  --black: #000;
+  --grey: #f4f3f0;
+  --white: #fff;
+  --brown: rgb(108, 112, 47);
+  --lightbrown: #ebe9e5;
+  --blue: #0071ce;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ChobaniSerifWeb-Regular";
+  src: url("./fonts/ChobaniSerifWeb-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/ChobaniSerifWeb-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/ChobaniSerifWeb-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/ChobaniSerifWeb-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ChobaniSerifWeb-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/ChobaniSerifWeb-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/ChobaniSerifWeb-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ChobaniSerifWeb-Semibold";
+  src: url("./fonts/ChobaniSerifWeb-Semibold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/ChobaniSerifWeb-Semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/ChobaniSerifWeb-Semibold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/ChobaniSerifWeb-Semibold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ChobaniSerifWeb-Semibold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/ChobaniSerifWeb-Semibold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/ChobaniSerifWeb-Semibold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ChobaniSerifWeb-Light";
+  src: url("./fonts/ChobaniSerifWeb-Light.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/ChobaniSerifWeb-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/ChobaniSerifWeb-Light.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/ChobaniSerifWeb-Light.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ChobaniSerifWeb-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/ChobaniSerifWeb-Light.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/ChobaniSerifWeb-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body a {
+  color: var(--green);
+  font-family: 'ChobaniSerifWeb-Light';
+  font-size: 20px;
+}
+
+body a:hover {
+  color: var(--green);
+}
+
+main {
+  background-color: var(--grey);
+  overflow-x: hidden;
+}
+
+main .careers .bg-wrap .bg-left {
+  background-image: url("https://images.ctfassets.net/3s6ohrza3ily/htCcWo6LoAGKK662c8qqs/2a7c09d7a46006475e0e11c4b9dc0905/Careers_Hero_Image_v2.jpg?fm=webp&w=700");
+  background-size: cover;
+  background-position: 50%;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .6s cubic-bezier(.19,1,.22,1);
+  transition-delay: .2s;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+main .careers .bg-wrap .bg-mask {
+  background-image: url("https://images.ctfassets.net/3s6ohrza3ily/4oFVghvk5WE8iyqQagiiQw/4c6371689938624ed687df7d2e8dd8b1/Careers_Hero_Mask.svg?w=700");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: auto 100%;
+  background-position: 100% 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  transition: all .3s cubic-bezier(.215,.61,.355,1);
+}
+
+main .careers .bg-wrap {
+  height: calc(100% + 50px);
+  right: 0;
+  top: -50px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .careers .bg-wrap {
+    margin-top: -100px;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  main .careers .bg-wrap .bg-left {
+    height: calc(100% - 100px);
+    width: 100%;
+    bottom: 1px;
+    top: auto;
+    transform: translate(-50%);
+  }
+
+  main .careers .bg-wrap .bg-mask {
+    background-size: 100% auto;
+  }
+}
+
+main .careers .col-md-6 {
+  height: 700px;
+  font-family: "ChobaniSerifWeb-Regular";
+}
+
+@media only screen and (max-width: 768px) {
+  main .careers .col-md-6:first-of-type {
+    height: 300px;
+  }
+}
+
+main .careers .c-header {
+  font-family: "ChobaniSerifWeb-Semibold";
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+
+main .color-brown {
+  color: var(--brown);
+}
+
+main .color-green {
+  color: var(--green);
+}
+
+main .h0 {
+  font-size: 3rem;
+  line-height: 1.17;
+}
+
+main .h6 {
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+main .carousel .slide-card {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+main .carousel .slide-card .right-content {
+  background-color: var(--white);
+  padding: 2.5rem;
+  width: 50%;
+}
+
+main .carousel .slide-card img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .carousel .slide-card .right-content {
+    width: 100%;
+  }
+  
+  main .carousel .slide-card img {
+    width: 100%;
+  }
+}
+
+main .carousel .slide-card .right-content .right-content-desc {
+  font-family: "ChobaniSerifWeb-Regular";
+}
+
+
+main .carousel .slide-card .right-content .right-content-desc strong {
+  font-family: "ChobaniSerifWeb-Semibold";
+}
+
+main .carousel .slide-card .right-content .right-content-header {
+  font-family: "ChobaniSerifWeb-Semibold";
+}
+
+main .chobani-perks,.chobani-culture > div > p {
+  font-family: "ChobaniSerifWeb-Regular";
+}
+
+.slick-dots {
+  bottom: -50px !important;
+  z-index: 100;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.5 !important;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 0.7 !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+}
+
+main .chobani-culture {
+  margin-top: 10rem;
+  position: relative;
+}
+
+main .chobani-culture .carousel .slide-card iframe {
+  border: none;
+  display: none;
+}
+
+main .chobani-culture .slide-card .video {
+  width: 100%;
+  position: relative;
+}
+
+main .chobani-culture .slide-card .video .video-play {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  fill: var(--white);
+  display: inline-block;
+  width: 72px;
+  cursor: pointer;
+}
+
+main .chobani-culture .slide-card .video .video-play:hover {
+  width: 85px;
+  transition: width 0.3s ease-in;
+}
+
+main .chobani-culture .slide-card .video .video-play svg {
+  transition: all .3s cubic-bezier(.215,.61,.355,1);
+  transform-origin: 50% 50%;
+}
+
+main .chobani-culture .slide-card .video .video-bg {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .7s cubic-bezier(.19,1,.22,1);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green);
+}
+
+main .chobani-culture .slide-card .video .video-text {
+  position: absolute;
+  top: calc(50% + 50px);
+  opacity: 0;
+  text-align: center;
+  transition: all .4s cubic-bezier(.215,.61,.355,1);
+  z-index: 3;
+  width: 100%;
+  transform: translate3d(0,10px,0);
+  width: 80%;
+  left: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  line-height: 1.33;
+  font-family: "ChobaniSerifWeb-Light";
+  color: var(--white);
+}
+
+main .chobani-culture .slide-card .video .image-preview {
+  transition: opacity 1s cubic-bezier(.19,1,.22,1);
+  opacity: 1;
+  transition-delay: .15s;
+  opacity: 1;
+  z-index: 1;
+  left: -1px;
+  width: calc(100% + 2px);
+  width: 100%;
+  padding-bottom: 56%;
+  position: relative;
+}
+
+main .chobani-culture .slide-card .video .image-preview img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  min-width: calc(100% + 1px);
+  min-height: calc(100% + 1px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+main .chobani-culture .slide-card .video {
+  flex-shrink: 0;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+main .chobani-culture .carousel .slide-card .video:hover .video-bg {
+  opacity: 0.9;
+}
+
+main .chobani-culture .carousel .slide-card .video:hover .video-text {
+  transform: translateZ(0);
+  opacity: 1;
+}
+
+main .chobani-culture .carousel-bottom-bg {
+  max-width: 1340px;
+  width: 100%;
+  margin: auto;
+  margin-top: -80px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .chobani-values {
+  margin-top: 8rem;
+  padding: 0 40px;
+}
+
+main .chobani-values .container-fluid {
+  padding: 80px 20px;
+  background: var(--lightbrown);
+}
+
+main .chobani-values .container-fluid > p {
+  font-family: "ChobaniSerifWeb-Regular";
+}
+
+main .chobani-values .container-fluid > p > span {
+  font-family: "ChobaniSerifWeb-Semibold";
+  margin-right: 0.25rem;
+}
+
+main .chobani-values .container-fluid .h5 {
+  font-family: "ChobaniSerifWeb-Light";
+}
+
+main .chobani-values .container-fluid .recognitions {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+main .chobani-values .chobani-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .chobani-values .chobani-card .image-header {
+  max-width: 179.33333333333331px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+main .chobani-values .row {
+  margin-bottom: 5rem;
+}
+
+main .chobani-values .chobani-card .chobani-card-header {
+  font-family: "ChobaniSerifWeb-Semibold";
+}
+
+main .chobani-values .chobani-card .chobani-card-desc {
+  font-family: "ChobaniSerifWeb-Light";
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+main .chobani-openings {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+main .chobani-openings .container-fluid > p {
+  font-family: "ChobaniSerifWeb-Regular";
+  margin-bottom: 6rem;
+}
+
+main .chobani-openings .container-fluid .col-md-4 {
+  display: flex;
+  height: 50px;
+}
+
+main .chobani-openings .container-fluid a {
+  font-family: "ChobaniSerifWeb-Light";
+  margin: auto;
+}
+
+main .chobani-openings-description {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+main .chobani-openings-description p {
+  font-family: "ChobaniSerifWeb-Light";
+  max-width: 500px;
+}
+
+main .chobani-openings-description p > a {
+  color: var(--blue);
+  font-size: 18px;
+  font-family: "ChobaniSerifWeb-Light";
+  text-decoration: underline;
+}
+
+main .chobani-openings-description p.h1 {
+  font-size: 48px;
+}
+
+main .chobani-openings-description p.for-assistance a {
+  font-size: 16px;
+}
+
+main .chobani-openings-description img {
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 10rem;
+  width: 30%;
+  margin-bottom: 5rem;
+}
+
+main .chobani-openings-description .submit-application {
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  font-family: "ChobaniSerifWeb-Light";
+  width: fit-content;
+  text-decoration: none;
+}
+
+main .chobani-openings-description .signup-for-alerts {
+  color: var(--blue);
+  font-size: 16px;
+  font-family: "ChobaniSerifWeb-Light";
+  text-decoration: underline;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: var(--green);
+  color: var(--white);
+  font-family: "ChobaniSerifWeb-Light";
+}
+
+footer .c-border {
+  border-top: none;
+  border-bottom: 1px solid var(--white);
+}
+
+footer .c-nav-links {
+  font-family: "ChobaniSerifWeb-Light";
+}
+
+footer .c-nav-links a {
+  font-family: "ChobaniSerifWeb-Light";
+  font-size: 16px;
+  color: var(--white);
+}
+
+footer .d-flex {
+  font-family: "ChobaniSerifWeb-Light";
+  font-size: 16px;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
