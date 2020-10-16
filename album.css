@@ -498,3 +498,26 @@ footer .d-flex {
 footer p {
   margin-bottom: .25rem;
 }
+
+main .job-category {
+  background-color: var(--green);
+  height: 8rem;
+  display: flex;
+}
+
+main .job-category .category {
+  margin: auto;
+  color: var(--white);
+  font-family: "ChobaniSerifWeb-Semibold";
+}
+
+main .job-filter {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  font-family: "ChobaniSerifWeb-Regular";
+  background: url("./assets//images/jobs.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
