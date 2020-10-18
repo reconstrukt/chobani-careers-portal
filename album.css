@@ -562,7 +562,7 @@ main .job-filter .main-filters .location,.category {
 
 main .jobs-board {
   background-color: #f4f3f0;
-  padding: 5rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 main .jobs-board .jobs-list .table th {
@@ -607,6 +607,28 @@ main .jobs-board .jobs-list .pagination-header {
   letter-spacing: 0.2px;
   font-size: 15px;
   font-weight: 200;
+}
+
+main .share-jobs .share-jobs-header {
+  margin-right: 2rem;
+  line-height: 20px;
+  color: var(--green);
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+main .share-jobs i {
+  color: var(--white);
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 20px;
+  background-color: var(--green);
+  font-size:14px;
+  font-weight: bold;
+  border: 1px solid #999;
+  cursor: pointer;
 }
 
 /* select2 styles ------------------------ */
