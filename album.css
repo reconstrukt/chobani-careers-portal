@@ -560,6 +560,55 @@ main .job-filter .main-filters .location,.category {
   }
 }
 
+main .jobs-board {
+  background-color: #f4f3f0;
+  padding: 5rem 0;
+}
+
+main .jobs-board .jobs-list .table th {
+  border-top: none;
+  padding: 1.25rem;
+  font-family: "ChobaniSerifWeb-Semibold";
+  font-size: 20px;
+  color: var(--green);
+}
+
+main .jobs-board .jobs-list table {
+  color: var(--green);
+  font-family: "ChobaniSerifWeb-Light";
+}
+
+main .jobs-board .jobs-list table tbody tr:first-of-type td {
+  padding-top: 1.25rem;
+}
+
+main .jobs-board .jobs-list table tbody tr:last-of-type td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+main .jobs-board nav .pagination-sm .page-item .page-link {
+  border-radius: 0;
+  border-color: var(--green);
+  color: var(--green);
+  background-color:  #f4f3f0;
+  padding: 0.5rem 0.9rem;
+}
+
+main .jobs-board nav .page-item.active .page-link {
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+
+main .jobs-board .jobs-list .pagination-header {
+  margin-right: 2rem;
+  line-height: 40px;
+  color: var(--green);
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
 /* select2 styles ------------------------ */
 
 .select2-results__option .wrap:before{
