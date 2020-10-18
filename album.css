@@ -12,13 +12,13 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "ChobaniSerifWeb-Regular";
-  src: url("./fonts/ChobaniSerifWeb-Regular.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/ChobaniSerifWeb-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/ChobaniSerifWeb-Regular.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/ChobaniSerifWeb-Regular.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/ChobaniSerifWeb-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/ChobaniSerifWeb-Regular.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/ChobaniSerifWeb-Regular.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./assets/fonts/ChobaniSerifWeb-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/ChobaniSerifWeb-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./assets/fonts/ChobaniSerifWeb-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./assets/fonts/ChobaniSerifWeb-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/ChobaniSerifWeb-Regular.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -26,13 +26,13 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "ChobaniSerifWeb-Semibold";
-  src: url("./fonts/ChobaniSerifWeb-Semibold.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/ChobaniSerifWeb-Semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/ChobaniSerifWeb-Semibold.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/ChobaniSerifWeb-Semibold.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/ChobaniSerifWeb-Semibold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/ChobaniSerifWeb-Semibold.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/ChobaniSerifWeb-Semibold.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./assets/fonts/ChobaniSerifWeb-Semibold.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/ChobaniSerifWeb-Semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./assets/fonts/ChobaniSerifWeb-Semibold.otf") format("opentype"), /* Open Type Font */
+    url("./assets/fonts/ChobaniSerifWeb-Semibold.svg") format("svg"), /* Legacy iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Semibold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Semibold.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/ChobaniSerifWeb-Semibold.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -40,13 +40,13 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "ChobaniSerifWeb-Light";
-  src: url("./fonts/ChobaniSerifWeb-Light.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/ChobaniSerifWeb-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/ChobaniSerifWeb-Light.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/ChobaniSerifWeb-Light.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/ChobaniSerifWeb-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/ChobaniSerifWeb-Light.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/ChobaniSerifWeb-Light.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./assets/fonts/ChobaniSerifWeb-Light.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/ChobaniSerifWeb-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./assets/fonts/ChobaniSerifWeb-Light.otf") format("opentype"), /* Open Type Font */
+    url("./assets/fonts/ChobaniSerifWeb-Light.svg") format("svg"), /* Legacy iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./assets/fonts/ChobaniSerifWeb-Light.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/ChobaniSerifWeb-Light.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -521,3 +521,132 @@ main .job-filter {
   background-size: 100% 100%;
   background-position: center;
 }
+
+main .job-filter .main-filters .search-filter input {
+  width: 100%;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  padding: 0 4px;
+  font-family: "ChobaniSerifWeb-Light";
+  height: 28px;
+}
+
+main .job-filter .main-filters .search-filter {
+  width: 30%;
+}
+
+main .job-filter .main-filters .search-filter label {
+  color: var(--green);
+  top: 30px;
+}
+
+main .job-filter .main-filters button.search-jobs {
+  background-color: var(--brown);
+  color: var(--white);
+  border-radius: 4px;
+  height: 40px;
+}
+
+main .job-filter .main-filters .location,.category {
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .job-filter .main-filters .location,.category,.search-filter  {
+    width: 50% !important;
+  }
+}
+
+/* select2 styles ------------------------ */
+
+.select2-results__option .wrap:before{
+  font-family:fontAwesome;
+  color:#999;
+  content:"\f096";
+  width:25px;
+  height:25px;
+  padding-right: 10px;
+  
+}
+.select2-results__option--selected .wrap:before{
+  content:"\f14a";
+}
+
+/* not required css */
+
+.selector-location, .selector-multiple2, .selector-category {
+  width: 100%
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+  font-family:fontAwesome;
+  color:var(--white);
+  content:"\f107";
+  width:25px;
+  height:25px;
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: none !important;
+}
+
+.select2-container--open .select2-selection--single .select2-selection__arrow b:before {
+  content: "\f106";
+  color: var(--white);
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 2px !important;
+  border: none !important;
+  background-color: var(--green) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: var(--white) !important;
+  font-family: "ChobaniSerifWeb-Light";
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: var(--white) !important;
+}
+
+.select2-results__option {
+  padding: 2px 20px !important;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  background-color: var(--green) !important;
+  color: var(--white);
+  font-family: "chobaniSerifWeb-Light";
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--green) !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable .wrap:before {
+  color: #bbb !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: var(--green) !important;
+}
+
+.select2-dropdown {
+  border: none !important;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
