@@ -298,8 +298,8 @@
 			$('.search-filter').css('width', '50%');
 			$('.location').css('width', '35%');
 			refreshJobsList();
-			$('.table tr td:eq(2)').hide();
-			$('.table tr th:eq(2)').hide();
+			$('.table tr').find('td:eq(2)').hide();
+			$('.table tr').find('th:eq(2)').hide();
 		} else {
 			$('.search-jobs-title').text('Search All Jobs')
 			$('.job-category').hide();
