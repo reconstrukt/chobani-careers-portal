@@ -61,6 +61,12 @@ body a:hover {
   color: var(--green);
 }
 
+@media only screen and (max-width: 768px) {
+  header .navbar-brand svg {
+    width: 120px;
+  }
+}
+
 main {
   background-color: var(--grey);
   overflow-x: hidden;
@@ -104,15 +110,17 @@ main .careers .bg-wrap {
 
 @media only screen and (max-width: 768px) {
   main .careers .bg-wrap {
-    margin-top: -100px;
+    margin-top: 0;
     width: 100%;
     padding-bottom: 100%;
+    top: 0;
     position: relative;
+    height: 100%;
     overflow: hidden;
   }
 
   main .careers .bg-wrap .bg-left {
-    height: calc(100% - 100px);
+    height: calc(100%);
     width: 100%;
     bottom: 1px;
     top: auto;
@@ -130,8 +138,8 @@ main .careers .col-md-6 {
 }
 
 @media only screen and (max-width: 768px) {
-  main .careers .col-md-6:first-of-type {
-    height: 300px;
+  main .careers .col-md-6 {
+    height: auto;
   }
 }
 
@@ -154,6 +162,12 @@ main .color-green {
 main .h0 {
   font-size: 3rem;
   line-height: 1.17;
+}
+
+@media only screen and (max-width: 768px) {
+  main .h0 {
+    font-size: 28px;
+  }
 }
 
 main .h6 {
