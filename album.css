@@ -360,6 +360,12 @@ main .chobani-culture .carousel-bottom-bg {
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 768px) {
+  main .chobani-culture .carousel-bottom-bg {
+    margin-top: -10px;
+  }
+}
+
 main .chobani-values {
   margin-top: 8rem;
   padding: 0 40px;
