@@ -44,7 +44,7 @@
 
 			<section class="job-filter">
 				<div class="container-fluid pt-5">
-					<p class="color-brown mx-auto text-center mb-md-5 mb-3 search-jobs">Search Jobs</p>
+					<p class="color-brown mx-auto text-center mb-md-5 mb-3 search-jobs-title">Search Jobs</p>
 					<div class="d-flex flex-md-row flex-column main-filters align-items-center justify-content-between">
 						<div class="d-flex flex-column search-filter position-relative mb-2">
 							<input  id="search-filter" type="text" />
@@ -148,6 +148,9 @@
 	</body>
 	<script type="text/javascript">
 	$(document).ready(function(){
+		var location = [];
+		var category = [];
+
 		$.fn.select2.amd.require([
 			'select2/selection/single',
 			'select2/selection/placeholder',
@@ -194,6 +197,10 @@
 				}
 			});
 
+			$($selectLocation).on('change', function(e) {
+				location = $(this).val();
+			});
+
 			$($selectCategory).select2({
 				placeholder: 'Select multiple items',
 				selectionAdapter: SelectionAdapter,
@@ -212,7 +219,11 @@
 				},
 				templateSelection: function (data) {
 					return 'Category';
-				}
+				},
+			});
+
+			$($selectCategory).on('change', function(e) {
+				category = $(this).val();
 			});
 		
 		});
@@ -226,15 +237,15 @@
 			return decodeURIComponent(results[2].replace(/\+/g, ' '));
 		}
 
-		var category = getParameterByName('category');
-
-		if (category) {
+		if (getParameterByName('category')) {
 			$('.main-filters .category').hide();
-			$('.job-category .category').text(category);
+			$('.job-category .category').text(getParameterByName('category'));
+			category.push(getParameterByName('category'));
 			$('.search-filter').css('width', '50%');
 			$('.location').css('width', '35%');
+			$('.search-jobs').click();
 		} else {
-			$('.search-jobs').text('Search All Jobs')
+			$('.search-jobs-title').text('Search All Jobs')
 			$('.job-category').hide();
 		}
 
@@ -269,6 +280,36 @@
 			$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
 		});
 
+		$('.search-jobs').on('click', function() {
+			var term = $('#search-filter').val() || '';
+			location = location || [];
+			category = category || [];
+			filteredList = jobsList.filter(function(job) {
+				if (job.title.toLowerCase().includes(term.toLowerCase()) && (!location.length || location.some(function(a) {
+					return job.location.includes(a);
+				})) && (!category.length || category.some(function(a) {
+					return job.category.includes(a);
+				}))) {
+					return true;
+				}
+				return false;
+			});
+
+			page = 1;
+			$('.pagination-header').text('Result 1 of ' + Math.ceil(filteredList.length / 5));
+			$('.page-item').removeClass('active');
+			$('.pagination .page-item:eq(0)').addClass('active');
+			$('.pagination .page-item').show();
+			$('.pagination .page-item').slice(Math.ceil(filteredList.length / 5), 5).map(function(index, item) {
+				$(item).hide();
+			});
+
+			$('.jobs-list .table tbody').empty();
+			filteredList.slice((page - 1) * 5, (page) * 5).map(function(job) {
+				$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
+			});
+		});
+
 		$('.page-link').on('click', function() {
 			$('.page-item').removeClass('active');
 			$(this).parent().addClass('active');
@@ -277,6 +318,7 @@
 			filteredList.slice((page - 1) * 5, (page) * 5).map(function(job) {
 				$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
 			});
+			$('.pagination-header').text('Result ' + page + ' of ' + Math.ceil(filteredList.length / 5));
 		})
 	});
 	</script>
