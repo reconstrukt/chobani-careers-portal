@@ -67,7 +67,7 @@ main {
 }
 
 main .careers .bg-wrap .bg-left {
-  background-image: url("https://images.ctfassets.net/3s6ohrza3ily/htCcWo6LoAGKK662c8qqs/2a7c09d7a46006475e0e11c4b9dc0905/Careers_Hero_Image_v2.jpg?fm=webp&w=700");
+  background-image: url("./assets/images/Careers_Hero_Image_v2.jpg?w=700");
   background-size: cover;
   background-position: 50%;
   height: calc(100% - 5px);
@@ -82,7 +82,7 @@ main .careers .bg-wrap .bg-left {
 }
 
 main .careers .bg-wrap .bg-mask {
-  background-image: url("https://images.ctfassets.net/3s6ohrza3ily/4oFVghvk5WE8iyqQagiiQw/4c6371689938624ed687df7d2e8dd8b1/Careers_Hero_Mask.svg?w=700");
+  background-image: url("./assets/images/Careers_Hero_Mask.svg?w=700");
   background-repeat: no-repeat;
   position: absolute;
   background-size: auto 100%;
