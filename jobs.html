@@ -44,7 +44,7 @@
 
 			<section class="job-filter">
 				<div class="container-fluid pt-5">
-					<p class="color-brown mx-auto text-center mb-md-5 mb-3">Search Jobs</p>
+					<p class="color-brown mx-auto text-center mb-md-5 mb-3 search-jobs">Search Jobs</p>
 					<div class="d-flex flex-md-row flex-column main-filters align-items-center justify-content-between">
 						<div class="d-flex flex-column search-filter position-relative mb-2">
 							<input  id="search-filter" type="text" />
@@ -270,6 +270,7 @@
 			$('.search-filter').css('width', '50%');
 			$('.location').css('width', '35%');
 		} else {
+			$('.search-jobs').text('Search All Jobs')
 			$('.job-category').hide();
 		}
 	});
