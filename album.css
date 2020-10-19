@@ -178,6 +178,8 @@ main .carousel .slide-card .right-content {
 
 main .carousel .slide-card img {
   width: 50%;
+  height: 500px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 768px) {
