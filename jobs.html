@@ -52,14 +52,14 @@
 						</div>
 						<div class="dropdown location mb-2">
 							<select class="selector-location" multiple>
-								<option value="ID - Twin Falls">ID - Twin Falls</option>
-								<option value="NY - New Berlin">NY - New Berlin</option>
-								<option value="NY - New York City">NY - New York City</option>
-								<option value="NY - Norwich">NY - Norwich</option>
-								<option value="Remote - McLean, Virginia">Remote - McLean, Virginia</option>
-								<option value="Remote - Nebraska">Remote - Nebraska</option>
-								<option value="Remote - New York">Remote - New York</option>
-								<option value="Remote - Stamford">Remote - Stamford</option>
+								<option value="Twin Falls">ID - Twin Falls</option>
+								<option value="New Berlin">NY - New Berlin</option>
+								<option value="New York City">NY - New York City</option>
+								<option value="Norwich">NY - Norwich</option>
+								<option value="McLean, Virginia">Remote - McLean, Virginia</option>
+								<option value="Nebraska">Remote - Nebraska</option>
+								<option value="New York">Remote - New York</option>
+								<option value="Stamford">Remote - Stamford</option>
 							</select>
 						</div>
 						<div class="dropdown category mb-2">
@@ -91,18 +91,6 @@
 						</div>
 					</div>
 					<div class="jobs-list">
-						<nav aria-label="pagination">
-							<ul class="pagination pagination-sm justify-content-end mb-4">
-								<span class="pagination-header">Result 1 of 5</span>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item active">
-									<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"><a class="page-link" href="#">4</a></li>
-								<li class="page-item"><a class="page-link" href="#">5</a></li>
-							</ul>
-						</nav>
 						<table class="table text-center mb-5">
 							<thead>
 								<tr>
@@ -112,43 +100,19 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>Job title 001</td>
-									<td>Job 001 location</td>
-									<td>Job 001 category</td>
-								</tr>
-								<tr>
-									<td>Job title 002</td>
-									<td>Job 002 location</td>
-									<td>Job 002 category</td>
-								</tr>
-								<tr>
-									<td>Job title 003</td>
-									<td>Job 003 location</td>
-									<td>Job 003 category</td>
-								</tr>
-								<tr>
-									<td>Job title 004</td>
-									<td>Job 004 location</td>
-									<td>Job 004 category</td>
-								</tr>
-								<tr>
-									<td>Job title 005</td>
-									<td>Job 005 location</td>
-									<td>Job 005 category</td>
-								</tr>
+
 							</tbody>
 						</table>
 						<nav aria-label="pagination">
 							<ul class="pagination pagination-sm justify-content-end mb-4">
 								<span class="pagination-header">Result 1 of 5</span>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item active">
-									<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+								<li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+								<li class="page-item">
+									<a class="page-link" href="javascript:void(0);">2</a>
 								</li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"><a class="page-link" href="#">4</a></li>
-								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -273,6 +237,47 @@
 			$('.search-jobs').text('Search All Jobs')
 			$('.job-category').hide();
 		}
+
+		var jobsList = [
+			{ title: 'Commercial Finance Analyst', location: 'New York City, New York', category: 'Finance'},
+			{ title: 'Senior Manager of Enterprise Data Governance', location: 'New York City, New York', category: 'Information Technology'},
+			{ title: 'Network Engineer', location: '2 locations', category: 'Information Technology'},
+			{ title: 'IT Project Manager', location: '2 locations', category: 'Information Technology'},
+			{ title: 'Senior IT Technician', location: 'New York City, New York', category: 'Information Technology'},
+			{ title: 'Maintenance Technician I or II - D Shift 4:00 PM to 4:30 AM (Every other weekend required)', location: 'Twin Falls, Idaho', category: 'Manufacturing'},
+			{ title: 'Maintenance Technician I or II - C Shift 4:00 PM to 4:30 AM (Every other weekend required)', location: 'Twin Falls, Idaho', category: 'Manufacturing'},
+			{ title: 'Production Supervisor - Nights', location: 'Twin Falls, Idaho', category: 'Plant Operations'},
+			{ title: 'Preventive Maintenance Technician (Grade 6) - D Shift (6:00 PM to 6:30 AM)', location: 'New Berlin, New York', category: 'Plant Operations'},
+			{ title: 'Maintenance Technician (Grade 7) - C Shift (6:00PM-6:30AM)', location: 'New Berlin, New York', category: 'Plant Operations'},
+			{ title: 'Junior Electrical Maintenance Technician', location: 'Twin Falls, Idaho', category: 'Plant Operations'},
+			{ title: 'Security Officer - D Shift (6:00PM-6:30AM)', location: 'New Berlin, New York', category: 'Plant Operations'},
+			{ title: 'Fruit Room Operator (Grade 4) - A Shift (6:00AM-6:30PM, Every other weekend required)', location: 'New Berlin, New York', category: 'Plant Operations'},
+			{ title: 'Cereal Filler (Grade 4) - C Shift (6:00 PM to 6:30 AM, every other weekend required)', location: 'Twin Falls, Idaho', category: 'Plant Operations'},
+			{ title: 'R&D Scientist II', location: 'Twin Falls, Idaho', category: 'Research & Development'},
+			{ title: 'Retail Sales & Execution Specialist - Bronx, NY (Remote)', location: 'New York, New York', category: 'Sales'},
+			{ title: 'Retail Sales & Execution Specialist - McLean, VA (Remote)', location: 'McLean, Virginia', category: 'Sales'},
+			{ title: 'Retail Sales & Execution Specialist - Omaha, NE (Remote)', location: 'Lincoln, Nebraska', category: 'Sales'},
+			{ title: 'Retail Sales & Execution Specialist - Stamford, CT (Remote)', location: 'Stamford, Connecticut', category: 'Sales'},
+			{ title: 'Retail Sales & Execution Specialist - Brooklyn, NY (Remote)', location: 'New York, New York', category: 'Sales'},
+			{ title: 'Truck Driver (Grade 7) - Nights', location: 'New Berlin, New York', category: 'Transportation'},
+		];
+
+		var page = 1;
+		var filteredList = Object.assign([], jobsList);
+
+		filteredList.slice((page - 1) * 5, (page) * 5).map(function(job) {
+			$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
+		});
+
+		$('.page-link').on('click', function() {
+			$('.page-item').removeClass('active');
+			$(this).parent().addClass('active');
+			page = parseInt($(this).text());
+			$('.jobs-list .table tbody').empty();
+			filteredList.slice((page - 1) * 5, (page) * 5).map(function(job) {
+				$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
+			});
+		})
 	});
 	</script>
 </html>
