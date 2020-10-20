@@ -11,54 +11,43 @@
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "ChobaniSerifWeb-Regular";
-  src: url("./assets/fonts/ChobaniSerifWeb-Regular.eot"); /* IE9 Compat Modes */
-  src: url("./assets/fonts/ChobaniSerifWeb-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./assets/fonts/ChobaniSerifWeb-Regular.otf") format("opentype"), /* Open Type Font */
-    url("./assets/fonts/ChobaniSerifWeb-Regular.svg") format("svg"), /* Legacy iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Regular.woff") format("woff"), /* Modern Browsers */
-    url("./assets/fonts/ChobaniSerifWeb-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-family: 'Chobani Serif Semibold';
+  src: url('./assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
+      url('./assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-/* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "ChobaniSerifWeb-Semibold";
-  src: url("./assets/fonts/ChobaniSerifWeb-Semibold.eot"); /* IE9 Compat Modes */
-  src: url("./assets/fonts/ChobaniSerifWeb-Semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./assets/fonts/ChobaniSerifWeb-Semibold.otf") format("opentype"), /* Open Type Font */
-    url("./assets/fonts/ChobaniSerifWeb-Semibold.svg") format("svg"), /* Legacy iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Semibold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Semibold.woff") format("woff"), /* Modern Browsers */
-    url("./assets/fonts/ChobaniSerifWeb-Semibold.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
+  font-family: 'Chobani Serif';
+  src: url('./assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
+      url('./assets/fonts/ChobaniSerif-Regular.woff') format('woff');
+  font-weight: 200;
   font-style: normal;
 }
 
-/* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "ChobaniSerifWeb-Light";
-  src: url("./assets/fonts/ChobaniSerifWeb-Light.eot"); /* IE9 Compat Modes */
-  src: url("./assets/fonts/ChobaniSerifWeb-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./assets/fonts/ChobaniSerifWeb-Light.otf") format("opentype"), /* Open Type Font */
-    url("./assets/fonts/ChobaniSerifWeb-Light.svg") format("svg"), /* Legacy iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./assets/fonts/ChobaniSerifWeb-Light.woff") format("woff"), /* Modern Browsers */
-    url("./assets/fonts/ChobaniSerifWeb-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-family: 'Chobani Sans';
+  src: url('./assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
+       url('./assets/fonts/ChobaniSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body a {
-  color: var(--green);
-  font-family: 'ChobaniSerifWeb-Light';
-  font-size: 20px;
+  color: var(--green) !important;
+  font-family: 'Chobani Serif', serif !important;
 }
 
 body a:hover {
-  color: var(--green);
+  color: #ff4814 !important;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,7 +123,6 @@ main .careers .bg-wrap {
 
 main .careers .col-md-6 {
   height: 700px;
-  font-family: "ChobaniSerifWeb-Regular";
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,8 +132,60 @@ main .careers .col-md-6 {
 }
 
 main .careers .c-header {
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif", serif;
+  font-size: 48px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #1a3c34;
 }
+
+main .careers .c-header strong {
+  font-family: "Chobani Serif Semibold", serif;
+}
+
+main .careers .c-content {
+  font-family: "Chobani Serif", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+  color: #1a3c34;
+}
+
+main .careers .bg-careers-land {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+main .careers .bg-careers-land .land-header {
+  color: rgb(108, 112, 47);
+  font-family: 'Chobani Sans', serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+}
+
+main .careers .bg-careers-land .view-open-options {
+  font-family: 'Chobani Sans', serif !important;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  padding: 17px 24px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: var(--white);
+  white-space: nowrap;
+  transition: all .3s cubic-bezier(.215,.61,.355,1);
+  margin-top: 32px;
+}
+
+main .careers .bg-careers-land .view-open-options:hover {
+  color: var(--green) !important;
+} 
 
 .container-fluid {
   max-width: 1440px;
@@ -207,20 +247,48 @@ main .carousel .slide-card img {
 }
 
 main .carousel .slide-card .right-content .right-content-desc {
-  font-family: "ChobaniSerifWeb-Regular";
+  font-family: "Chobani Serif", serif;
 }
 
 
 main .carousel .slide-card .right-content .right-content-desc strong {
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
 }
 
 main .carousel .slide-card .right-content .right-content-header {
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
 }
 
-main .chobani-perks,.chobani-culture > div > p {
-  font-family: "ChobaniSerifWeb-Regular";
+main .chobani-perks .c-title {
+  font-family: "Chobani Sans", sans-serif !important;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  font-weight: 200;
+}
+
+main .chobani-culture .c-title {
+  font-family: "Chobani Sans", sans-serif !important;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  font-weight: 200;
+}
+
+main .chobani-values .c-title {
+  font-family: "Chobani Sans", sans-serif !important;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  font-weight: 200;
+}
+
+main .chobani-openings .c-title {
+  font-family: "Chobani Sans", sans-serif !important;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  font-weight: 200;
 }
 
 .slick-dots {
@@ -306,7 +374,7 @@ main .chobani-culture .slide-card .video .video-text {
   text-overflow: ellipsis;
   font-size: 24px;
   line-height: 1.33;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   color: var(--white);
 }
 
@@ -377,16 +445,16 @@ main .chobani-values .container-fluid {
 }
 
 main .chobani-values .container-fluid > p {
-  font-family: "ChobaniSerifWeb-Regular";
+  font-family: "Chobani Serif", serif;
 }
 
 main .chobani-values .container-fluid > p > span {
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
   margin-right: 0.25rem;
 }
 
 main .chobani-values .container-fluid .h5 {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
 }
 
 main .chobani-values .container-fluid .recognitions {
@@ -411,11 +479,11 @@ main .chobani-values .row {
 }
 
 main .chobani-values .chobani-card .chobani-card-header {
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
 }
 
 main .chobani-values .chobani-card .chobani-card-desc {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   width: 100%;
   max-width: 250px;
   text-align: center;
@@ -427,7 +495,7 @@ main .chobani-openings {
 }
 
 main .chobani-openings .container-fluid > p {
-  font-family: "ChobaniSerifWeb-Regular";
+  font-family: "Chobani Serif", serif;
   margin-bottom: 6rem;
 }
 
@@ -437,7 +505,7 @@ main .chobani-openings .container-fluid .col-md-4 {
 }
 
 main .chobani-openings .container-fluid a {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   margin: auto;
 }
 
@@ -447,14 +515,14 @@ main .chobani-openings-description {
 }
 
 main .chobani-openings-description p {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   max-width: 500px;
 }
 
 main .chobani-openings-description p > a {
-  color: var(--blue);
+  color: var(--blue) !important;
   font-size: 18px;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   text-decoration: underline;
 }
 
@@ -477,7 +545,7 @@ main .chobani-openings-description img {
 main .chobani-openings-description .submit-application {
   background: var(--white);
   padding: 1rem 1.5rem;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   width: fit-content;
   text-decoration: none;
 }
@@ -485,7 +553,7 @@ main .chobani-openings-description .submit-application {
 main .chobani-openings-description .signup-for-alerts {
   color: var(--blue);
   font-size: 16px;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   text-decoration: underline;
 }
 
@@ -494,7 +562,7 @@ footer {
   padding-bottom: 3rem;
   background: var(--green);
   color: var(--white);
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
 }
 
 footer .c-border {
@@ -503,18 +571,24 @@ footer .c-border {
 }
 
 footer .c-nav-links {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
 }
 
 footer .c-nav-links a {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   font-size: 16px;
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 footer .d-flex {
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   font-size: 16px;
+}
+
+footer .copyright {
+  color: #bbc5ba !important;
+  font-size: 14px;
+  font-family: 'Chobani Sans',sans-serif;
 }
 
 footer p {
@@ -530,14 +604,14 @@ main .job-category {
 main .job-category .category {
   margin: auto;
   color: var(--white);
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
 }
 
 main .job-filter {
   position: relative;
   width: 100%;
   height: 16rem;
-  font-family: "ChobaniSerifWeb-Regular";
+  font-family: "Chobani Serif", serif;
   background: url("./assets//images/jobs.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -552,7 +626,7 @@ main .job-filter .main-filters .search-filter input {
   border-radius: 2px;
   outline: none;
   padding: 0 4px;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
   height: 28px;
 }
 
@@ -590,14 +664,14 @@ main .jobs-board {
 main .jobs-board .jobs-list .table th {
   border-top: none;
   padding: 1.25rem;
-  font-family: "ChobaniSerifWeb-Semibold";
+  font-family: "Chobani Serif Semibold", serif;
   font-size: 20px;
   color: var(--green);
 }
 
 main .jobs-board .jobs-list table {
   color: var(--green);
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
 }
 
 main .jobs-board .jobs-list table tbody tr:first-of-type td {
@@ -702,7 +776,7 @@ main .share-jobs i {
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: var(--white) !important;
-  font-family: "ChobaniSerifWeb-Light";
+  font-family: "Chobani Serif", serif;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -716,7 +790,7 @@ main .share-jobs i {
 .select2-container--default .select2-results>.select2-results__options {
   background-color: var(--green) !important;
   color: var(--white);
-  font-family: "chobaniSerifWeb-Light";
+  font-family: "chobani Serif", serif;
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
