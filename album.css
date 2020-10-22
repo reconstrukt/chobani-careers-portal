@@ -628,11 +628,13 @@ main .chobani-openings-description .signup-for-alerts {
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background: var(--green);
   color: var(--white);
   font-family: "Chobani Serif", serif;
+}
+
+footer .container-fluid {
+  padding: 3rem;
+  background: var(--green);
 }
 
 footer .c-border {

@@ -1,0 +1,258 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  --green: #1a3c34;
+  --black: #000;
+  --grey: #f4f3f0;
+  --white: #fff;
+  --brown: rgb(108, 112, 47);
+  --lightbrown: #ebe9e5;
+  --blue: #0071ce;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: 'Chobani Serif Semibold';
+  src: url('./assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
+      url('./assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chobani Serif';
+  src: url('./assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
+      url('./assets/fonts/ChobaniSerif-Regular.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chobani Sans';
+  src: url('./assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
+       url('./assets/fonts/ChobaniSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body a {
+  color: var(--green) !important;
+  font-family: 'Chobani Serif', serif !important;
+}
+
+body a:hover {
+  color: #ff4814 !important;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+
+header .container-fluid {
+  background-color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar-brand svg {
+    width: 120px;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+}
+
+footer {
+	color: var(--white);
+	background: var(--grey);
+  font-family: "Chobani Serif", serif;
+}
+
+footer .container-fluid {
+  padding: 3rem;
+	background: var(--green);
+	max-width: 1440px;
+}
+
+footer .c-border {
+  border-top: none;
+  border-bottom: 1px solid var(--white);
+}
+
+footer .c-nav-links {
+  font-family: "Chobani Serif", serif;
+}
+
+footer .c-nav-links a {
+  font-family: "Chobani Serif", serif;
+  font-size: 16px;
+  color: var(--white) !important;
+}
+
+footer .d-flex {
+  font-family: "Chobani Serif", serif;
+  font-size: 16px;
+}
+
+footer .copyright {
+  color: #bbc5ba !important;
+  font-size: 14px;
+  font-family: 'Chobani Sans',sans-serif;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+header > div {
+	max-width: 1440px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+
+main {
+	background-color: var(--grey);
+}
+
+main section.c-header{
+	background-color: var(--lightbrown);
+	padding: 192px 0 88px;
+	max-width: 1440px;
+	margin: auto;
+	position: relative;
+}
+
+main section.c-header .c-header-category,.c-header-location {
+	color: var(--brown);
+	text-align: center;
+	font-family: "Chobani Sans", sans-serif;
+}
+
+main section.c-header .c-header-title {
+	font-family: "Chobani Serif Semibold", serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--green);
+	margin-bottom: 0;
+}
+
+main section.c-header .c-header-button {
+	font-family: 'Chobani Sans', serif !important;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.2px;
+	padding: 17px 24px;
+	border-radius: 2px;
+	text-align: center;
+	background-color: var(--white);
+	white-space: nowrap;
+	transition: all .3s cubic-bezier(.215,.61,.355,1);
+
+	position: absolute;
+	bottom: -23px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+main section.c-starting-desc,section.c-desc {
+	padding: 0 32px;
+}
+
+main section.c-starting-desc .content {
+	padding: 112px 0 64px;
+	border-bottom: 2px solid #dedbd8;
+}
+
+main section.c-starting-desc .content > div {
+	margin: 0 30px;
+	width: calc(58.333333333333336% - 60px);
+}
+
+main section.c-starting-desc .content .heading {
+	font-family: "Chobani Serif", serif;
+	font-size: 24px;
+	line-height: 1.33;
+	color: var(--green);
+	letter-spacing: .3px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+main section.c-starting-desc .content .heading-desc {
+	font-family: "Chobani Serif", serif;
+	font-size: 24px;
+	line-height: 1.33;
+	letter-spacing: .2px;
+	margin-bottom: 16px;
+	color: var(--green);
+}
+
+main section.c-desc .content {
+	padding: 64px 0 48px;
+}
+
+main section.c-desc .content > div {
+	margin: 0 30px;
+	width: calc(50% - 60px);
+	color: var(--green);
+	font-family: "Chobani Serif", serif;
+}
+
+main section.c-desc .content .fo_gl {
+	font-family: Chobani Serif,serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+}
+
+main section.c-desc .content .fo_gl strong {
+	font-family: 'Chobani Serif Semibold',serif;
+	font-weight: 400;
+}
+
+
+main section.c-desc .content .aqr_as,.aqr_au {
+	margin-bottom: 16px;
+}
+
+main section.c-desc .content .aqr_as {
+	padding: 0 0 20px;
+}
+
+main section.c-desc .content .aqr_a0 {
+	margin-left: 20px;
+	list-style: disc outside;
+}
+
+main section.c-desc .content .apply {
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  font-family: "Chobani Sans",sans-serif !important;
+	width: fit-content;
+	font-size: 14px;
+  text-decoration: none;
+}
+
+main section.c-desc .content .back-to-careers {
+  color: #0071ce !important;
+  font-size: 14px;
+	font-family: "Chobani Sans", sans-serif !important;
+	line-height: 1;
+	letter-spacing: .2px;
+	white-space: nowrap;
+	transition: all .3s cubic-bezier(.215,.61,.355,1);
+  text-decoration: underline;
+}
