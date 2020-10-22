@@ -20,8 +20,8 @@
   <body>
 
     <header>
-      <div class="navbar navbar-dark bg-white box-shadow py-2 py-md-3">
-        <div class="container-fluid d-flex justify-content-md-between justify-content-center py-md-3">
+      <div class="box-shadow">
+        <div class="container-fluid d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
           <a href="/" class="navbar-brand d-flex align-items-center">
             <svg class="chobani-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.46 58.75" role="presentation" aria-hidden="true" tabindex="-1" disabled="disabled" clickable="false" width="160px">
               <title>Chobani</title>
@@ -53,13 +53,13 @@
                 <p class="text-center mx-auto pb-0 mb-0 c-content">
                   Our energetic work environment is a culmination of diverse backgrounds and cultures. Since the beginning, we’ve focused on fostering tight-knit teams that feed off innovation and creativity. We believe that when you’re comfortable being yourself and truly love what you do, amazing things can happen.
                 </p>
-                <a class="text-center view-open-options mx-auto" href="#careers-section-openings">View open options</a>
+                <a class="text-center view-open-options mx-auto" href="#careers-section-openings">View open positions</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="chobani-perks text-center">
+      <section class="mt-5 chobani-perks text-center">
         <div class="w-100">
           <p class="text-center color-brown mb-5 c-title">Chobani perks</p>
           <div class="carousel">
@@ -285,7 +285,8 @@
             </div>
           </div>
           <div class="carousel-bottom-bg">
-            <img src="./assets/images/carousel_asset.svg" alt="carousel asset"></img>
+            <img src="./assets/images/carousel_asset.svg" class="d-none d-md-block" alt="carousel asset"></img>
+            <img src="./assets/images/mobile_light_green.svg" class="d-flex d-md-none" alt="carousel asset"></img>
           </div>
         </div>
       </section>
@@ -409,7 +410,7 @@
       </section>
 
       <section class="chobani-openings-description">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column container-fluid">
           <p class="h6 w-50 text-center mx-auto color-green mb-4 d-md-block d-none">The employment policy of Chobani is to provide equal opportunity to all persons. Our company, therefore, has made a commitment to equal employment opportunity through a positive and continuing affirmative action program. Please refer to our Equal Opportunity Employment Policy. At Chobani, no employee or applicant for employment will be discriminated against because of any legally protected status or characteristic. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, citizenship, age, disability, veteran status, pregnancy, marital status, predisposing genetic characteristics and genetic information, or any other state or federal legally protected status or characteristic.
           </p>
           <p class="h6 w-75 text-center mx-auto color-green mb-4 d-block d-md-none">The employment policy of Chobani is to provide equal opportunity to all persons. Our company, therefore, has made a commitment to equal employment opportunity through a positive and continuing affirmative action program. Please refer to our Equal Opportunity Employment Policy. At Chobani, no employee or applicant for employment will be discriminated against because of any legally protected status or characteristic. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, citizenship, age, disability, veteran status, pregnancy, marital status, predisposing genetic characteristics and genetic information, or any other state or federal legally protected status or characteristic.
@@ -424,12 +425,16 @@
           <p class="h6 w-75 text-center mx-auto color-green mb-4 d-md-none d-block">If you need assistance in the application or hiring process to accommodate a disability, you may request an accommodation at any time by contacting Human Resources at 607-337-1246.</p>
           <p class="h6 text-center mx-auto color-green"><a class="h5" href="https://assets.ctfassets.net/3s6ohrza3ily/198iE0T7avMKtiSAl9gYVP/8822bf2934f8d084f5160a48cb258bd4/EEO_Policy_Statement_AAP_Updated_09042019.pdf" target="_blank">Chobani’s Equal Employment Opportunity Policy Statement</a></p>
           </p>
-          <img src="./assets/images/questionmark.svg"></img>
-          <p class="h1 color-green text-center mx-auto mb-3">Didn't find the job you were looking for?</p>
-          <p class="h6 color-green text-center mx-auto for-assistance mb-4">For assistance, please email <a class="h6" href="mailto:career@chobani.com">career@chobani.com</a></p>
-          <span class="d-flex align-items-center">
-            <a class="submit-application color-green h6 ml-auto mr-5 mb-0" href="https://jobs.jobvite.com/chobani/apply" rel="noopener noreferrer" target="_blank">Submit a general application</a>
-            <p class="mr-auto mb-0"><a class="signup-for-alerts" href="https://jobs.jobvite.com/chobani/jobAlerts" rel="noopener noreferrer" target="_blank">Sign up for job alerts</a></p>
+          <div class="row">
+            <div class="col-md-4 offset-md-4 offset-2 col-8 px-4">
+              <img src="./assets/images/questionmark.svg"></img>
+            </div>
+          </div>
+          <p class="h1 color-green text-center mx-auto look-for-job mb-3">Didn't find the job you were looking for?</p>
+          <p class="h6 color-green text-center mx-auto for-assistance mb-4 d-flex flex-column flex-md-row"><span>For assistance, please email</span>&nbsp;<a class="h6" href="mailto:career@chobani.com">career@chobani.com</a></p>
+          <span class="d-flex align-items-md-center flex-column flex-md-row">
+            <a class="submit-application color-green h6 ml-md-auto mx-auto mr-md-2 mb-md-0" href="https://jobs.jobvite.com/chobani/apply" rel="noopener noreferrer" target="_blank">Submit a general application</a>
+            <p class="ml-md-2 mr-md-auto mb-md-0 mx-auto mt-5 mt-md-0"><a class="signup-for-alerts" href="https://jobs.jobvite.com/chobani/jobAlerts" rel="noopener noreferrer" target="_blank">Sign up for job alerts</a></p>
           </span>
         </div>
       </section>
@@ -469,13 +474,26 @@
   </body>
   <script type="text/javascript">
     $(document).ready(function(){
+      var zigzagHeight = $('.bg-wrap').parent().height();
+      $('.bg-wrap').css('width', zigzagHeight);
+
       $('.chobani-perks .carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         centerMode: true,
-        centerPadding: '400px',
+        centerPadding: '480px',
         responsive: [
+          { 
+            breakpoint: 1600,
+            settings: {
+              dots: true,
+              centerMode: true,
+              centerPadding: '300px',
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
           {
             breakpoint: 1400,
             settings: {
@@ -511,7 +529,7 @@
             settings: {
               dots: true,
               centerMode: true,
-              centerPadding: '50px',
+              centerPadding: '0px',
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -537,6 +555,16 @@
         centerPadding: '400px',
         responsive: [
           {
+            breakpoint: 1600,
+            settings: {
+              dots: true,
+              centerMode: true,
+              centerPadding: '250px',
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
             breakpoint: 1200,
             settings: {
               dots: true,
@@ -561,7 +589,7 @@
             settings: {
               dots: true,
               centerMode: true,
-              centerPadding: '50px',
+              centerPadding: '10px',
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -571,7 +599,7 @@
             settings: {
               dots: true,
               centerMode: true,
-              centerPadding: '10px',
+              centerPadding: '0px',
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -592,6 +620,10 @@
       $(window).on('resize', function() {
         var slickHeight = $('.chobani-culture .video .video-bg').height();
         $('iframe').attr('height', slickHeight);
+
+        var zigzagHeight = $('.bg-wrap').parent().height();
+        console.log(zigzagHeight);
+        $('.bg-wrap').css('width', zigzagHeight);
       })
     });
   </script>

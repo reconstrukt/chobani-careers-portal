@@ -50,15 +50,31 @@ body a:hover {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
-  header .navbar-brand svg {
-    width: 120px;
-  }
+header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+
+header .container-fluid {
+  background-color: var(--white);
 }
 
 main {
   background-color: var(--grey);
   overflow-x: hidden;
+  padding-top: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar-brand svg {
+    width: 120px;
+  }
+
+  main {
+    padding-top: 0px;
+  }
 }
 
 main .careers .bg-wrap .bg-left {
@@ -121,15 +137,6 @@ main .careers .bg-wrap {
   }
 }
 
-main .careers .col-md-6 {
-  height: 700px;
-}
-
-@media only screen and (max-width: 768px) {
-  main .careers .col-md-6 {
-    height: auto;
-  }
-}
 
 main .careers .c-header {
   font-family: "Chobani Serif", serif;
@@ -138,6 +145,21 @@ main .careers .c-header {
   font-weight: 400;
   letter-spacing: 0.3px;
   color: #1a3c34;
+}
+
+@media only screen and (max-width: 768px) {
+  main .careers .col-md-6 {
+    height: auto;
+  }
+
+  main .careers .c-header {
+    font-size: 28px;
+    width: 80%;
+  }
+
+  main .careers .c-content {
+    font-size: 1.3rem !important;
+  }
 }
 
 main .careers .c-header strong {
@@ -158,6 +180,15 @@ main .careers .bg-careers-land {
   margin-right: 70px;
   margin-top: auto;
   margin-bottom: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  main .careers .bg-careers-land {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 main .careers .bg-careers-land .land-header {
@@ -185,6 +216,8 @@ main .careers .bg-careers-land .view-open-options {
 
 main .careers .bg-careers-land .view-open-options:hover {
   color: var(--green) !important;
+  transition: background-color 0.3s linear 0s;
+  background-color: hsla(0, 0%, 100%, 0.7);
 } 
 
 .container-fluid {
@@ -232,17 +265,19 @@ main .carousel .slide-card .right-content {
 
 main .carousel .slide-card img {
   width: 50%;
-  height: 500px;
+  height: 520px;
   object-fit: cover;
 }
 
 @media only screen and (max-width: 768px) {
   main .carousel .slide-card .right-content {
     width: 100%;
+    height: 480px;
   }
   
   main .carousel .slide-card img {
     width: 100%;
+    height: 380px;
   }
 }
 
@@ -294,6 +329,10 @@ main .chobani-openings .c-title {
 .slick-dots {
   bottom: -50px !important;
   z-index: 100;
+}
+
+.slick-dots li {
+  margin: 0 !important;
 }
 
 .slick-dots li.slick-active button:before {
@@ -430,13 +469,20 @@ main .chobani-culture .carousel-bottom-bg {
 
 @media only screen and (max-width: 768px) {
   main .chobani-culture .carousel-bottom-bg {
-    margin-top: -10px;
+    bottom: -52px;
+    padding: 0 30px;
   }
 }
 
 main .chobani-values {
   margin-top: 8rem;
   padding: 0 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  main .chobani-values {
+    padding: 0px;
+  }
 }
 
 main .chobani-values .container-fluid {
@@ -469,7 +515,7 @@ main .chobani-values .chobani-card {
 }
 
 main .chobani-values .chobani-card .image-header {
-  max-width: 179.33333333333331px;
+  max-width: 150px;
   position: relative;
   margin-bottom: 40px;
 }
@@ -489,9 +535,16 @@ main .chobani-values .chobani-card .chobani-card-desc {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  main .chobani-values .chobani-card .chobani-card-desc {
+    max-width: 100%;
+    font-size: 20px;
+  }
+}
+
 main .chobani-openings {
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 
 main .chobani-openings .container-fluid > p {
@@ -534,11 +587,28 @@ main .chobani-openings-description p.for-assistance a {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  main .chobani-openings-description p.for-assistance {
+    font-size: 20px;
+    line-height: 0.5;
+  }
+
+  main .chobani-openings-description p.for-assistance a {
+    font-size: 20px;
+  }
+
+  main .chobani-openings-description p.look-for-job {
+    font-size: 28px;
+    width: 60%;
+    margin-bottom: 2rem !important;
+  }
+}
+
 main .chobani-openings-description img {
   margin-left: auto;
   margin-right: auto; 
   margin-top: 10rem;
-  width: 30%;
+  width: 100%;
   margin-bottom: 5rem;
 }
 
@@ -614,7 +684,7 @@ main .job-filter {
   font-family: "Chobani Serif", serif;
   background: url("./assets//images/jobs.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -693,7 +763,7 @@ main .jobs-board nav .pagination-sm .page-item .page-link {
 main .jobs-board nav .page-item.active .page-link {
   background-color: var(--green);
   border-color: var(--green);
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 main .jobs-board .jobs-list .pagination-header {
@@ -703,6 +773,10 @@ main .jobs-board .jobs-list .pagination-header {
   letter-spacing: 0.2px;
   font-size: 15px;
   font-weight: 200;
+}
+
+main table td {
+  width: 33.333333%;
 }
 
 main .share-jobs .share-jobs-header {

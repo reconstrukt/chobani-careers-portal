@@ -21,8 +21,8 @@
 	
 	<body>
     <header>
-      <div class="navbar navbar-dark bg-white box-shadow py-2 py-md-3">
-        <div class="container-fluid d-flex justify-content-md-between justify-content-center py-md-3">
+      <div class="box-shadow">
+        <div class="container-fluid d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
           <a href="/" class="navbar-brand d-flex align-items-center">
             <svg class="chobani-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.46 58.75" role="presentation" aria-hidden="true" tabindex="-1" disabled="disabled" clickable="false" width="160px">
               <title>Chobani</title>
@@ -30,8 +30,8 @@
             </svg>
           </a>
           <div class="d-md-flex d-none">
-            <a class="font-weight-light mr-5 h6" href="/index.html">Home</a>
-            <a class="font-weight-light ml-5 h6" href="/jobs.html">View All Jobs</a>
+            <a class="font-weight-light mr-5 h6 mb-0" href="/index.html">Home</a>
+            <a class="font-weight-light ml-5 h6 mb-0" href="/jobs.html">View All Jobs</a>
           </div>
         </div>
       </div>
@@ -319,7 +319,9 @@
 			page = parseInt($(this).text());
 			$('.jobs-list .table tbody').empty();
 			filteredList.slice((page - 1) * 5, (page) * 5).map(function(job) {
-				$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td>' + job.category+ '</td></tr>');
+				$('.jobs-list .table tbody').append('<tr><td>' + job.title + '</td><td>' + job.location + '</td><td style="display: ' + 
+					( getParameterByName('category') ? "none" : "table-cell" )
+					+ ';">' + job.category+ '</td></tr>');
 			});
 			$('.pagination-header').text('Result ' + page + ' of ' + Math.ceil(filteredList.length / 5));
 		})
