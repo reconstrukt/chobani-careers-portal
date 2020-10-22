@@ -630,6 +630,7 @@ main .chobani-openings-description .signup-for-alerts {
 footer {
   color: var(--white);
   font-family: "Chobani Serif", serif;
+  background: var(--grey);
 }
 
 footer .container-fluid {
