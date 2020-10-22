@@ -12,30 +12,30 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: 'Chobani Serif Semibold';
-  src: url('./assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('./assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
-      url('./assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chobani Serif';
-  src: url('./assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('./assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
-      url('./assets/fonts/ChobaniSerif-Regular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chobani Sans';
-  src: url('./assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
-       url('./assets/fonts/ChobaniSans-Regular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,7 +78,7 @@ main {
 }
 
 main .careers .bg-wrap .bg-left {
-  background-image: url("./assets/images/Careers_Hero_Image_v2.jpg?w=700");
+  background-image: url("https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/images/Careers_Hero_Image_v2.jpg?w=700");
   background-size: cover;
   background-position: 50%;
   height: calc(100% - 5px);
@@ -93,7 +93,7 @@ main .careers .bg-wrap .bg-left {
 }
 
 main .careers .bg-wrap .bg-mask {
-  background-image: url("./assets/images/Careers_Hero_Mask.svg?w=700");
+  background-image: url("https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/images/Careers_Hero_Mask.svg?w=700");
   background-repeat: no-repeat;
   position: absolute;
   background-size: auto 100%;
@@ -685,7 +685,7 @@ main .job-filter {
   width: 100%;
   height: 16rem;
   font-family: "Chobani Serif", serif;
-  background: url("./assets//images/jobs.png");
+  background: url("https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets//images/jobs.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
