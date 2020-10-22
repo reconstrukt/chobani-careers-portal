@@ -256,3 +256,31 @@ main section.c-desc .content .back-to-careers {
 	transition: all .3s cubic-bezier(.215,.61,.355,1);
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+	main section.c-header{
+		padding: 144px 0 88px;
+	}
+
+	main section.c-header .c-header-title {
+		font-size: 28px;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	main section.c-starting-desc .content > div {
+		width: 100%;
+	}
+
+	main section.c-desc .content > div {
+		width: 100%;
+	}
+
+	main section.c-desc .content .fo_gl {
+		font-size: 20px;
+	}
+
+	main section.c-desc .content {
+		padding-bottom: 24px;
+	}
+}
