@@ -710,7 +710,7 @@ main .job-category .category {
 main .job-filter {
   position: relative;
   width: 100%;
-  height: 128px;
+  height: 250px;
   font-family: "Chobani Serif", serif;
   background: url("https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets//images/jobs.png");
   background-repeat: no-repeat;
