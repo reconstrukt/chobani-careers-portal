@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	if (!location.href.includes("chobani-careers.reconstrukt.net")) {
+		$("head").remove();
+	}
 	var location = [];
 	var category = [];
 

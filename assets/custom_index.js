@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	if (!location.href.includes("chobani-careers.reconstrukt.net")) {
+		$("head").remove();
+	}
+
 	var zigzagHeight = $('.bg-wrap').parent().height();
 	$('.bg-wrap').css('width', zigzagHeight);
 

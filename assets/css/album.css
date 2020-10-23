@@ -45,7 +45,7 @@ body a, .inner a {
   font-family: 'Chobani Serif', serif !important;
 }
 
-body a:hover, .inner a {
+body a:hover, .inner a:hover {
   color: #ff4814 !important;
   text-decoration: none;
 }
