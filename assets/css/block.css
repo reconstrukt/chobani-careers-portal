@@ -21,3 +21,7 @@ div.customPlugin {
 body.coreCSB a:not(#skipLink), #body .outershell .btn, body.coreCSB div.ukCookiePolicy>div.container button.btn, .outershell div.searchwell input, select.optionsFacet-select {
 	border: none !important;
 }
+
+div#skip {
+	display: none !important;
+}
