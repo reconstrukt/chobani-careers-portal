@@ -10,7 +10,7 @@
 }
 
 html {
-  --webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* font converted using font-converter.net. thank you! */

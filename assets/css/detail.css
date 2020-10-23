@@ -9,6 +9,10 @@
   --blue: #0071ce;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: 'Chobani Serif Semibold';
