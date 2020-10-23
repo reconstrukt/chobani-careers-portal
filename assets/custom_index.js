@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	if (!location.href.includes("chobani-careers.reconstrukt.net")) {
+	if (location && location.href && !location.href.includes("chobani-careers.reconstrukt.net")) {
 		$("head").remove();
 	}
 

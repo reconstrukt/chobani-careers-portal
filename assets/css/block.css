@@ -25,3 +25,7 @@ body.coreCSB a:not(#skipLink), #body .outershell .btn, body.coreCSB div.ukCookie
 div#skip {
 	display: none !important;
 }
+
+div.inner > div:not(.customPlugin) {
+	display: none !important;
+}
