@@ -13,3 +13,11 @@ div.inner {
 div#innershell {
 	max-width: 100% !important;
 }
+
+div.customPlugin {
+	margin: 0 !important;
+}
+
+body.coreCSB a:not(#skipLink), #body .outershell .btn, body.coreCSB div.ukCookiePolicy>div.container button.btn, .outershell div.searchwell input, select.optionsFacet-select {
+	border: none !important;
+}

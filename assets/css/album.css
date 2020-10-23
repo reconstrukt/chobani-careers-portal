@@ -1,5 +1,5 @@
 :root {
-  --jumbotron-padding-y: 3rem;
+  --jumbotron-padding-y: 48px;
   --green: #1a3c34;
   --black: #000;
   --grey: #f4f3f0;
@@ -40,12 +40,12 @@
   font-style: normal;
 }
 
-body a {
+body a, .inner a {
   color: var(--green) !important;
   font-family: 'Chobani Serif', serif !important;
 }
 
-body a:hover {
+body a:hover, .inner a {
   color: #ff4814 !important;
   text-decoration: none;
 }
@@ -158,7 +158,7 @@ main .careers .c-header {
   }
 
   main .careers .c-content {
-    font-size: 1.3rem !important;
+    font-size: 20px !important;
   }
 }
 
@@ -180,8 +180,8 @@ main .careers .bg-careers-land {
   margin-right: 70px;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -233,7 +233,7 @@ main .color-green {
 }
 
 main .h0 {
-  font-size: 3rem;
+  font-size: 48px;
   line-height: 1.17;
 }
 
@@ -250,8 +250,8 @@ main .h6 {
 
 main .carousel .slide-card {
   display: flex;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-right: 24px;
   outline: none;
   user-select: none;
   cursor: pointer;
@@ -259,7 +259,7 @@ main .carousel .slide-card {
 
 main .carousel .slide-card .right-content {
   background-color: var(--white);
-  padding: 2.5rem;
+  padding: 40px;
   width: 50%;
 }
 
@@ -348,7 +348,7 @@ main .chobani-openings .c-title {
 }
 
 main .chobani-culture {
-  margin-top: 10rem;
+  margin-top: 160px;
   position: relative;
 }
 
@@ -475,7 +475,7 @@ main .chobani-culture .carousel-bottom-bg {
 }
 
 main .chobani-values {
-  margin-top: 8rem;
+  margin-top: 128px;
   padding: 0 40px;
 }
 
@@ -496,7 +496,7 @@ main .chobani-values .container-fluid > p {
 
 main .chobani-values .container-fluid > p > span {
   font-family: "Chobani Serif Semibold", serif;
-  margin-right: 0.25rem;
+  margin-right: 4px;
 }
 
 main .chobani-values .container-fluid .h5 {
@@ -504,8 +504,8 @@ main .chobani-values .container-fluid .h5 {
 }
 
 main .chobani-values .container-fluid .recognitions {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-top: 96px;
+  margin-bottom: 48px;
 }
 
 main .chobani-values .chobani-card {
@@ -521,7 +521,7 @@ main .chobani-values .chobani-card .image-header {
 }
 
 main .chobani-values .row {
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 
 main .chobani-values .chobani-card .chobani-card-header {
@@ -543,13 +543,13 @@ main .chobani-values .chobani-card .chobani-card-desc {
 }
 
 main .chobani-openings {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+  padding-top: 84px;
+  padding-bottom: 32px;
 }
 
 main .chobani-openings .container-fluid > p {
   font-family: "Chobani Serif", serif;
-  margin-bottom: 6rem;
+  margin-bottom: 96px;
 }
 
 main .chobani-openings .container-fluid .col-md-4 {
@@ -563,8 +563,8 @@ main .chobani-openings .container-fluid a {
 }
 
 main .chobani-openings-description {
-  padding-top: 4rem;
-  padding-bottom: 8rem;
+  padding-top: 64px;
+  padding-bottom: 128px;
 }
 
 main .chobani-openings-description p {
@@ -600,21 +600,21 @@ main .chobani-openings-description p.for-assistance a {
   main .chobani-openings-description p.look-for-job {
     font-size: 28px;
     width: 60%;
-    margin-bottom: 2rem !important;
+    margin-bottom: 32px !important;
   }
 }
 
 main .chobani-openings-description img {
   margin-left: auto;
   margin-right: auto; 
-  margin-top: 10rem;
+  margin-top: 160px;
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 
 main .chobani-openings-description .submit-application {
   background: var(--white);
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   font-family: "Chobani Serif", serif;
   width: fit-content;
   text-decoration: none;
@@ -634,7 +634,7 @@ footer {
 }
 
 footer .container-fluid {
-  padding: 3rem;
+  padding: 48px;
   background: var(--green);
 }
 
@@ -665,12 +665,12 @@ footer .copyright {
 }
 
 footer p {
-  margin-bottom: .25rem;
+  margin-bottom: 4px;
 }
 
 main .job-category {
   background-color: var(--green);
-  height: 8rem;
+  height: 128px;
   display: flex;
 }
 
@@ -683,7 +683,7 @@ main .job-category .category {
 main .job-filter {
   position: relative;
   width: 100%;
-  height: 16rem;
+  height: 128px;
   font-family: "Chobani Serif", serif;
   background: url("https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets//images/jobs.png");
   background-repeat: no-repeat;
@@ -731,12 +731,12 @@ main .job-filter .main-filters .location,.category {
 
 main .jobs-board {
   background-color: #f4f3f0;
-  padding: 1rem 0 5rem 0;
+  padding: 16px 0 80px 0;
 }
 
 main .jobs-board .jobs-list .table th {
   border-top: none;
-  padding: 1.25rem;
+  padding: 20px;
   font-family: "Chobani Serif Semibold", serif;
   font-size: 20px;
   color: var(--green);
@@ -748,7 +748,7 @@ main .jobs-board .jobs-list table {
 }
 
 main .jobs-board .jobs-list table tbody tr:first-of-type td {
-  padding-top: 1.25rem;
+  padding-top: 20px;
 }
 
 main .jobs-board .jobs-list table tbody tr:last-of-type td {
@@ -760,7 +760,7 @@ main .jobs-board nav .pagination-sm .page-item .page-link {
   border-color: var(--green);
   color: var(--green);
   background-color:  #f4f3f0;
-  padding: 0.5rem 0.9rem;
+  padding: 8px 14px;
 }
 
 main .jobs-board nav .page-item.active .page-link {
@@ -770,7 +770,7 @@ main .jobs-board nav .page-item.active .page-link {
 }
 
 main .jobs-board .jobs-list .pagination-header {
-  margin-right: 2rem;
+  margin-right: 32px;
   line-height: 40px;
   color: var(--green);
   letter-spacing: 0.2px;
@@ -783,7 +783,7 @@ main table td {
 }
 
 main .share-jobs .share-jobs-header {
-  margin-right: 2rem;
+  margin-right: 32px;
   line-height: 20px;
   color: var(--green);
   letter-spacing: 0.2px;
