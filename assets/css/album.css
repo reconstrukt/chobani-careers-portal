@@ -9,6 +9,10 @@
   --blue: #0071ce;
 }
 
+html {
+  --webkit-font-smoothing: antialiased;
+}
+
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: 'Chobani Serif Semibold';
@@ -188,6 +192,8 @@ main .careers .bg-careers-land {
   main .careers .bg-careers-land {
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -352,6 +358,17 @@ main .chobani-culture {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  main .chobani-culture {
+    margin-top: 7rem;
+  }
+
+  main .chobani-values:first-of-type .container-fluid {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+}
+
 main .chobani-culture .carousel .slide-card iframe {
   border: none;
   display: none;
@@ -482,6 +499,7 @@ main .chobani-values {
 @media only screen and (max-width: 768px) {
   main .chobani-values {
     padding: 0px;
+    margin-top: 4rem;
   }
 }
 
@@ -535,13 +553,6 @@ main .chobani-values .chobani-card .chobani-card-desc {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  main .chobani-values .chobani-card .chobani-card-desc {
-    max-width: 100%;
-    font-size: 20px;
-  }
-}
-
 main .chobani-openings {
   padding-top: 84px;
   padding-bottom: 32px;
@@ -550,6 +561,22 @@ main .chobani-openings {
 main .chobani-openings .container-fluid > p {
   font-family: "Chobani Serif", serif;
   margin-bottom: 96px;
+}
+
+@media only screen and (max-width: 768px) {
+  main .chobani-values .chobani-card .chobani-card-desc {
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  main .chobani-openings .container-fluid > p {
+    font-family: "Chobani Serif", serif;
+    margin-bottom: 48px;
+  }
+
+  main .chobani-openings {
+    padding-top: 32px;
+  }
 }
 
 main .chobani-openings .container-fluid .col-md-4 {
