@@ -138,11 +138,11 @@ $(document).ready(function(){
 
 	$('.slide-card .video').on('click', function() {
 		var imageHeight = $(this).height();
-		console.log(imageHeight);
 		$(this).addClass('d-none');
 		$(this).parent().find('iframe').attr('height', imageHeight);
 		const source = $(this).parent().find('iframe').attr('src');
 		$(this).parent().find('iframe').attr('src', source  + '?autoplay=1&loop=1&rel=0&wmode=transparent');
+		$(this).parent().find('iframe').attr('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
 		$(this).parent().find('iframe').css('display', 'block');
 	});
 
