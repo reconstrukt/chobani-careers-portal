@@ -9,3 +9,7 @@ div #footer {
 div.inner {
 	max-width: 100% !important;
 }
+
+div#innershell {
+	max-width: 100% !important;
+}
