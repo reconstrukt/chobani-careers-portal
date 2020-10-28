@@ -23,6 +23,12 @@ $(document).ready(function(){
 		$('.keywordsearch-button').text('Search All Jobs');
 	}
 
+	var mainSection = getParameterByName('category') ? `<main>
+	<section class="job-category">
+		<h1 class="category text-center">` + getParameterByName('category') + `</h1>
+	</section>
+	</main>` : ``;
+
 	$("#header").replaceWith(`<header>
 	<div class="box-shadow container-fluid">
 		<div class="d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
@@ -38,7 +44,8 @@ $(document).ready(function(){
 			</div>
 		</div>
 	</div>
-</header>`);
+</header>
+` + mainSection);
 
 $("#footer").replaceWith(`<footer>
 <div class="container-fluid">
