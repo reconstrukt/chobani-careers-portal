@@ -26,7 +26,10 @@ div#skip {
 	display: none !important;
 }
 
-/* div.inner > div:not(.customPlugin) { */
-div.inner > #search-wrapper {
+div.inner > div:not(.customPlugin) {
 	display: none !important;
+}
+
+div.inner > #search-wrapper {
+	display: block !important;
 }
