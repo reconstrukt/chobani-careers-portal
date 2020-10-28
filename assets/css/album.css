@@ -711,6 +711,13 @@ main .job-category {
   display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+  main .job-category {
+    height: 80px;
+    margin-top: 82px;
+  }
+}
+
 main .job-category .category {
   margin: auto;
   color: var(--white);
