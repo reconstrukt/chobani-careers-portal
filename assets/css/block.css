@@ -26,6 +26,7 @@ div#skip {
 	display: none !important;
 }
 
-div.inner > div:not(.customPlugin) {
+/* div.inner > div:not(.customPlugin) { */
+div.inner > #search-wrapper {
 	display: none !important;
 }
