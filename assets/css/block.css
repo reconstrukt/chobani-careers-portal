@@ -18,9 +18,6 @@ div.customPlugin {
 	margin: 0 !important;
 }
 
-body.coreCSB a:not(#skipLink), #body .outershell .btn, body.coreCSB div.ukCookiePolicy>div.container button.btn, .outershell div.searchwell input, select.optionsFacet-select {
-	border: none !important;
-}
 
 div#skip {
 	display: none !important;
@@ -35,6 +32,12 @@ div.inner > #job-table {
 	display: block !important;
 }
 
+@media only screen and (max-width: 768px) {
+	div.inner > #search-wrapper {
+		padding-top: 100px;
+	}
+}
+
 .jobs-board .share-jobs {
   display: none !important;
 }
@@ -47,6 +50,41 @@ hr {
 	display: block !important;
 }
 
-.optionsLink {
-	display: none !important;
+.optionsFacet .optionsFacet-label {
+	padding-left: 1.5rem;
+	margin-bottom: 5px;
+	justify-content: flex-start;
+	color: var(--green);
+}
+
+#savesearch {
+	display: none;
+}
+
+#tile-search-results-label {
+	padding-left: 48px;
+}
+
+.optionsLink .optionsLink-padding, .optionsFacet {
+	max-width: 100%;
+	width: 100%;
+}
+
+.optionsDiv select {
+	height: 26px;
+	background-color: var(--green);
+	color: var(--white) !important;
+}
+
+.searchwell .row>div>span {
+	color: var(--green);
+}
+
+body.coreCSB a:not(#skipLink) {
+	color: var(--green) !important;
+}
+
+#body .outershell .btn, #body .outershell input[type="submit"] {
+	color: var(--white) !important;
+	background-color: var(--brown) !important;
 }
