@@ -22,7 +22,10 @@ $(document).ready(function(){
 	} else {
 		$('.keywordsearch-button').text('Search All Jobs');
 	}
-
+  
+  console.log( chobaniTheme );
+  console.log( window.chobaniTheme );
+  
 	var mainSection = getParameterByName('category') ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
