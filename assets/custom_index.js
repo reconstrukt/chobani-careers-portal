@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  
+  if ( ! $('body').hasClass('home-page') ) {
+    // stop manipulating DOM if not on homepage
+    return;
+  }
+  
 	if (location && location.href && !location.href.includes("chobani-careers.reconstrukt.net")) {
 		$("head").remove();
 	}

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	
+  if ( ! $('body').hasClass('talentlanding-page') ) {
+    // stop manipulating DOM if not on job category page 
+    return;
+  }
+  
 	var location = [];
 	var category = [];
 
