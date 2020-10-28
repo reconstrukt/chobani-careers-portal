@@ -24,8 +24,8 @@ $(document).ready(function(){
 	}
 
 	$("#header").replaceWith(`<header>
-	<div class="box-shadow">
-		<div class="container-fluid d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
+	<div class="box-shadow container-fluid">
+		<div class="d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
 			<a href="/" class="navbar-brand d-flex align-items-center">
 				<svg class="chobani-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.46 58.75" role="presentation" aria-hidden="true" tabindex="-1" disabled="disabled" clickable="false" width="160px">
 					<title>Chobani</title>

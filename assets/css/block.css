@@ -130,7 +130,7 @@ div.inner > #job-table {
 }
 
 .job-tile-result-container {
-	padding: 72px 48px;
+	padding: 128px 48px;
 }
 
 #job-tile-list {
@@ -186,4 +186,27 @@ body.coreCSB .bordercolorb6a533a1 {
 
 #optionsFacetLoading {
 	padding-left: 0 !important;
+}
+
+.outershell a {
+	color: var(--green) !important;
+}
+
+.outershell a:hover {
+	color: var(--green) !important;
+}
+
+.talentlanding-page #innershell {
+	padding-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+	.talentlanding-page #innershell {
+		padding-top: 82px;
+	}
+}
+
+#body .outershell a.btn:hover, #body .outershell a.btn:focus, #body .outershell .btn:hover, #body .outershell .btn:focus, #body .outershell input[type="submit"]:hover, #body .outershell input[type="submit"]:focus {
+	border-color: transparent !important;
+	text-decoration: none !important;
 }
