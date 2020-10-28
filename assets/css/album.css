@@ -72,6 +72,10 @@ main {
   padding-top: 100px;
 }
 
+.navbar-brand {
+  padding: 0 !important;
+}
+
 @media only screen and (max-width: 768px) {
   header .navbar-brand svg {
     width: 120px;
