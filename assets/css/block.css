@@ -200,3 +200,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	border-color: transparent !important;
 	text-decoration: none !important;
 }
+
+#search-actions {
+	display: none !important;
+}
