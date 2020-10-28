@@ -192,7 +192,7 @@ $(document).ready(function(){
     title: 'People',
     url: '/go/People/6848650/'
   },{
-    title: 'Planning and Product Supply',
+    title: 'Planning and Product  Supply',
     url: '/go/Planning-and-Product-Supply/6848750/'
   },{
     title: 'Plant Operations',
@@ -223,29 +223,32 @@ $(document).ready(function(){
   var categoryContainer = $('.js-chobani-job-categories');
   categoryContainer.empty();
   
-  var html = '';
+  var href, html = '';
   
   for ( var i=0; i<jobCats.length; i++ ) {
     
     html += '<div class="row">';
     
     if( typeof jobCats[i] !== 'undefined' ) {
+      href = jobCats[i].url + '?category=' + encodeURIComponent(jobCats[i].title);
       html += '<div class="col-md-4">';
-      html += '<a class="h4 color-green text-center" href="' + jobCats[i].url + '">' + jobCats[i].title + '</a>';
+      html += '<a class="h4 color-green text-center" href="' + href + '">' + jobCats[i].title + '</a>';
       html += '</div>';
     }
     
     i++;
     if( typeof jobCats[i] !== 'undefined' ) {
+      href = jobCats[i].url + '?category=' + encodeURIComponent(jobCats[i].title);
       html += '<div class="col-md-4">';
-      html += '<a class="h4 color-green text-center" href="' + jobCats[i].url + '">' + jobCats[i].title + '</a>';
+      html += '<a class="h4 color-green text-center" href="' + href + '">' + jobCats[i].title + '</a>';
       html += '</div>';
     }
     
     i++;
     if( typeof jobCats[i] !== 'undefined' ) {
+      href = jobCats[i].url + '?category=' + encodeURIComponent(jobCats[i].title);
       html += '<div class="col-md-4">';
-      html += '<a class="h4 color-green text-center" href="' + jobCats[i].url + '">' + jobCats[i].title + '</a>';
+      html += '<a class="h4 color-green text-center" href="' + href + '">' + jobCats[i].title + '</a>';
       html += '</div>';
     }
     
