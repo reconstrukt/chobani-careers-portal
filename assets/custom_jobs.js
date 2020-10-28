@@ -40,7 +40,7 @@ $(document).ready(function(){
 			</a>
 			<div class="d-md-flex d-none">
 				<a class="font-weight-light mr-5 h6" href="/">Home</a>
-				<a class="font-weight-light ml-5 h6" href="jobs.html">View All Jobs</a>
+				<a class="font-weight-light ml-5 h6 js-chobani-all-jobs" href="#">View All Jobs</a>
 			</div>
 		</div>
 	</div>
