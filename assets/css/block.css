@@ -178,9 +178,10 @@ body.coreCSB .bordercolorb6a533a1 {
 	color: var(--green) !important;
 }
 
-.outershell div.searchwell a:hovers {
+.outershell div.searchwell a:hover {
 	border: none !important;
 	color: var(--green) !important;
+	text-decoration: none;
 }
 
 #optionsFacetLoading {
