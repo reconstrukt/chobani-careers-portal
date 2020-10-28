@@ -64,6 +64,7 @@ header {
 
 header .container-fluid {
   background-color: var(--white);
+  padding: 0;
 }
 
 main {

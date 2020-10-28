@@ -125,6 +125,10 @@ div.inner > #job-table {
 	margin-top: 30px;
 }
 
+.job-tile {
+	outline: none;
+}
+
 .job-tile-result-container {
 	padding: 72px 48px;
 }
@@ -168,3 +172,17 @@ body.coreCSB .bordercolorb6a533a1 {
 		font-size: 1.5rem !important;
 	}
 } 
+
+.outershell div.searchwell a:focus {
+	border: none !important;
+	color: var(--green) !important;
+}
+
+.outershell div.searchwell a:hovers {
+	border: none !important;
+	color: var(--green) !important;
+}
+
+#optionsFacetLoading {
+	padding-left: 0 !important;
+}
