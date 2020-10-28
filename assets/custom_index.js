@@ -5,9 +5,16 @@ $(document).ready(function(){
     return;
   }
   
-	if (location && location.href && !location.href.includes("chobani-careers.reconstrukt.net")) {
-		$("head").remove();
-	}
+  console.log( 'applying chobani theme to successfactors homepage' );
+  
+  if (location && location.href && !location.href.includes("chobani-careers.reconstrukt.net")) {
+    $("head").find("link[rel=stylesheet]").each(function(){
+      if ( $(this).attr('href').indexOf('chobani-careers-portal') == -1 ) {
+        $(this).remove();
+        console.log( 'removed successfactors css: ' + $(this).attr('href') );
+      }
+    });
+  }
 
 	var zigzagHeight = $('.bg-wrap').parent().height();
 	$('.bg-wrap').css('width', zigzagHeight);
