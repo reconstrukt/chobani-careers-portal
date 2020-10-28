@@ -34,7 +34,7 @@ div.inner > #job-table {
 
 @media only screen and (max-width: 768px) {
 	div.inner > #search-wrapper {
-		padding-top: 100px;
+		padding-top: 0;
 	}
 }
 
@@ -59,6 +59,7 @@ hr {
 
 #tile-search-results-label {
 	padding-left: 0;
+	color: var(--green) !important;
 }
 
 .optionsLink .optionsLink-padding, .optionsFacet {
@@ -99,6 +100,7 @@ hr {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	min-height: 196px;
 }
 
 .outershell div.searchwell a, .outershell div.search a {
@@ -124,7 +126,7 @@ div.inner > #job-table {
 }
 
 .job-tile-result-container {
-	padding: 48px;
+	padding: 72px 48px;
 }
 
 #job-tile-list {
@@ -145,10 +147,24 @@ div.inner > #job-table {
 	font-family: 'Chobani Serif', serif !important;
 }
 
-.tiletitle h2 a {
+body.coreCSB .tiletitle h2 a.jobTitle-link {
 	color: var(--green) !important;
 }
 
 body.coreCSB .bordercolorb6a533a1 {
 	border: none !important;
 }
+
+#actions {
+	max-width: 1440px !important;
+}
+
+#rss-label {
+	color: var(--green) !important;
+}
+
+@media only screen and (max-width: 768px) {
+	main .job-category .category {
+		font-size: 1.5rem !important;
+	}
+} 
