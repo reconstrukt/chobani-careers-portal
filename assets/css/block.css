@@ -57,7 +57,7 @@ hr {
 }
 
 #tile-search-results-label {
-	padding-left: 48px;
+	padding-left: 0;
 }
 
 .optionsLink .optionsLink-padding, .optionsFacet {
