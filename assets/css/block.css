@@ -46,12 +46,8 @@ hr {
 	display: none !important;
 }
 
-#moreOptionsDiv {
-	display: block !important;
-}
-
 .optionsFacet .optionsFacet-label {
-	padding-left: 1.5rem;
+	padding-left: 1rem;
 	margin-bottom: 5px;
 	justify-content: flex-start;
 	color: var(--green);
@@ -87,4 +83,24 @@ body.coreCSB a:not(#skipLink) {
 #body .outershell .btn, #body .outershell input[type="submit"] {
 	color: var(--white) !important;
 	background-color: var(--brown) !important;
+}
+
+.searchwell input {
+	background-color: var(--green);
+	color: var(--white) !important;
+}
+
+#keywordsearch .container-fluid .row:nth-of-type(2) > div{
+	width: 100%;
+}
+
+#keywordsearch-q {
+	width: 100%;
+}
+
+#content .search-well {
+	background-image: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/jobs.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
