@@ -38,3 +38,15 @@ div.inner > #job-table {
 .jobs-board .share-jobs {
   display: none !important;
 }
+
+hr {
+	display: none !important;
+}
+
+#moreOptionsDiv {
+	display: block !important;
+}
+
+.optionsLink {
+	display: none !important;
+}

@@ -69,7 +69,7 @@ header .container-fluid {
 main {
   background-color: var(--grey);
   overflow-x: hidden;
-  padding-top: 90px;
+  padding-top: 100px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -289,3 +289,7 @@ main section.c-desc .content .back-to-careers {
 		padding-bottom: 24px;
 	}
 }
+
+#keywordsearch.jobAlertsSearchForm .container-fluid {
+	padding: 48px;
+}
