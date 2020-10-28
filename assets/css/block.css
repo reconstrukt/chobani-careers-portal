@@ -48,6 +48,7 @@ hr {
 
 .optionsFacet .optionsFacet-label {
 	margin-bottom: 5px;
+	padding-left: 1rem;
 	justify-content: flex-start;
 	color: var(--green);
 }
@@ -113,7 +114,9 @@ hr {
 }
 
 div.inner > #job-table {
-	padding: 48px 0;
+	width: 100%;
+	max-width: 1440px;
+	background: transparent;
 }
 
 .job-list {
@@ -127,4 +130,25 @@ div.inner > #job-table {
 #job-tile-list {
 	width: 100% !important;
 	max-width: 1440px !important;
+}
+
+#content {
+	background-color: var(--grey);
+}
+
+.talentlanding-page #content>.inner {
+	background-color: var(--grey);
+}
+
+.tiletitle h2 {
+	margin-bottom: 0 !important;
+	font-family: 'Chobani Serif', serif !important;
+}
+
+.tiletitle h2 a {
+	color: var(--green) !important;
+}
+
+body.coreCSB .bordercolorb6a533a1 {
+	border: none !important;
 }
