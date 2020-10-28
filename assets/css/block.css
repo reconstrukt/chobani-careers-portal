@@ -30,6 +30,11 @@ div.inner > div:not(.customPlugin) {
 	display: none !important;
 }
 
-div.inner > #search-wrapper {
+div.inner > #search-wrapper,
+div.inner > #job-table {
 	display: block !important;
+}
+
+.jobs-board .share-jobs {
+  display: none !important;
 }
