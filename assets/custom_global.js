@@ -9,4 +9,20 @@ $(document).ready(function(){
     });
   }
   
+  if ( $('body').hasClass('home-page') ) {
+    console.log('home page');
+  }
+  
+  if ( $('body').hasClass('talentlanding-page') ) {
+    console.log('job category page');
+  }
+  
+  if ( $('body').hasClass('job-page') ) {
+    console.log('job detail page');
+  }
+  
+  if ( $('body').hasClass('search-page') ) {
+    console.log('search results page');
+  }
+  
 });
