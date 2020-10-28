@@ -686,6 +686,10 @@ footer .c-nav-links a {
   color: var(--white) !important;
 }
 
+footer .c-nav-links a:hover {
+  color: var(--white) !important;
+}
+
 footer .d-flex {
   font-family: "Chobani Serif", serif;
   font-size: 16px;
@@ -705,6 +709,13 @@ main .job-category {
   background-color: var(--green);
   height: 128px;
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  main .job-category {
+    height: 80px;
+    margin-top: 82px;
+  }
 }
 
 main .job-category .category {

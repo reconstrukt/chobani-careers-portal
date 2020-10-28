@@ -130,7 +130,7 @@ div.inner > #job-table {
 }
 
 .job-tile-result-container {
-	padding: 72px 48px;
+	padding: 128px 48px;
 }
 
 #job-tile-list {
@@ -178,11 +178,29 @@ body.coreCSB .bordercolorb6a533a1 {
 	color: var(--green) !important;
 }
 
-.outershell div.searchwell a:hovers {
+.outershell div.searchwell a:hover {
 	border: none !important;
 	color: var(--green) !important;
+	text-decoration: none;
 }
 
 #optionsFacetLoading {
 	padding-left: 0 !important;
+}
+
+.outershell a {
+	color: var(--green) !important;
+}
+
+.outershell a:hover {
+	color: var(--green) !important;
+}
+
+#body .outershell a.btn:hover, #body .outershell a.btn:focus, #body .outershell .btn:hover, #body .outershell .btn:focus, #body .outershell input[type="submit"]:hover, #body .outershell input[type="submit"]:focus {
+	border-color: transparent !important;
+	text-decoration: none !important;
+}
+
+#search-actions {
+	display: none !important;
 }
