@@ -6,7 +6,8 @@
   --white: #fff;
   --brown: rgb(108, 112, 47);
   --lightbrown: #ebe9e5;
-  --blue: #0071ce;
+	--blue: #0071ce;
+	font-size: 100% !important;
 }
 
 html {
