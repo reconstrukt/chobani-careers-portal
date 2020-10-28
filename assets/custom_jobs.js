@@ -5,8 +5,6 @@ $(document).ready(function(){
     return;
   }
   
-	var category = [];
-
 	function getParameterByName(name, url = window.location.href) {
 		name = name.replace(/[\[\]]/g, '\\$&');
 		var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -19,17 +17,13 @@ $(document).ready(function(){
 	if (getParameterByName('category')) {
 		$('.main-filters .category').hide();
 		$('.job-category .category').text(getParameterByName('category'));
-		category.push(getParameterByName('category'));
 		$('.search-filter').css('width', '50%');
 		$('.location').css('width', '35%');
-		refreshJobsList();
 	} else {
-		$('.search-jobs-title').text('Search All Jobs')
-		$('.job-category').hide();
-		refreshJobsList();
+		$('.keywordsearch-button').text('Search All Jobs');
 	}
 
-	$('#header').replaceWith(`<header>
+	$("#header").replaceWith(`<header>
 	<div class="box-shadow">
 		<div class="container-fluid d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
 			<a href="/" class="navbar-brand d-flex align-items-center">
@@ -46,7 +40,7 @@ $(document).ready(function(){
 	</div>
 </header>`);
 
-$('#footer').replaceWith(`    <footer>
+$("#footer").replaceWith(`<footer>
 <div class="container-fluid">
 	<svg class="chobani-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.46 58.75" role="presentation" aria-hidden="true" tabindex="-1" disabled="disabled" clickable="false" width="180px">
 		<title>Chobani</title>
