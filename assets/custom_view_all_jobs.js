@@ -12,6 +12,6 @@ $(document).ready(function(){
   $('.searchbycat').find('a').each(function() {
     var href = $(this).attr('href');
     var category = $(this).text();
-    $(this).attr('href', href + '/' + category);
+    $(this).attr('href', href + '?category=' + category);
   })
 });
