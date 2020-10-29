@@ -48,16 +48,16 @@ chobaniTheme.footer = `<footer>
 $(document).ready(function(){
 	
   if ( $('body').hasClass('home-page') ) {
-    console.log('chobani-theme: home page');
+    console.log('chobani-theme found: home page');
   }  
   if ( $('body').hasClass('talentlanding-page') ) {
-    console.log('chobani-theme: job category page');
+    console.log('chobani-theme found: job category page');
   }  
   if ( $('body').hasClass('job-page') ) {
-    console.log('chobani-theme: job detail page');
+    console.log('chobani-theme found: job detail page');
   }  
   if ( $('body').hasClass('search-page') ) {
-    console.log('chobani-theme: search results page');
+    console.log('chobani-theme found: search results page');
   }
   
 });
