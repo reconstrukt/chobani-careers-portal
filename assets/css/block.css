@@ -259,6 +259,18 @@ body.coreCSB .bordercolorb6a533a1 {
 	right: 2rem;
 }
 
+.job-page span.jobdescription p {
+	padding: 10px 30px;
+}
+
+.job-page #content span.jobdescription ul {
+	padding: 10px 30px;
+}
+
+.job-page .jobdescription > div > div > div > div {
+	padding: 10px 30px;
+}
+
 @media only screen and (max-width: 768px) {
 	.job-page #rss-wrapper {
 		right: 0;
