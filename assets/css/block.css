@@ -298,6 +298,7 @@ body.coreCSB .bordercolorb6a533a1 {
 .job-page .jobTitle .applylink {
 	float: initial !important;
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
