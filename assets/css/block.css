@@ -344,9 +344,6 @@ body.coreCSB .bordercolorb6a533a1 {
 .job-page .jobDate {
 	text-align: center;
 	margin-bottom: 0.25rem;
-}
-
-.job-page .jobDate span {
 	color: var(--brown) !important;
 	font-family: "Chobani Sans", sans-serif !important;
 }
@@ -363,4 +360,16 @@ body.coreCSB .bordercolorb6a533a1 {
 
 .job-page .jobTitle {
 	position: relative;
+}
+
+.job-page #search-wrapper {
+	margin: auto;
+	max-width: 1440px;
+}
+
+.job-page #search-wrapper .row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
 }
