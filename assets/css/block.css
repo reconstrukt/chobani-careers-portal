@@ -271,11 +271,27 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding: 10px 30px;
 }
 
-.job-page .jobCompany,.jobDate,.jobCompany strong {
+.job-page .jobCompany strong {
 	display: none !important;
 }
 
-.job-page .jobCompany,.jobDate,.jobCompany {
+.job-page .jobDate strong {
+	display: none !important;
+}
+
+.job-page .jobCompany strong {
+	display: none !important;
+}
+
+.job-page .jobCompany {
+	text-align: center;
+}
+
+.job-page .jobDate {
+	text-align: center;
+}
+
+.job-page .jobCompany {
 	text-align: center;
 }
 
