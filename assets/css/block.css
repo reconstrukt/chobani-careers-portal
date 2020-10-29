@@ -462,3 +462,17 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 .viewall-page .breadcrumbtrail {
 	display: none;
 }
+
+.viewall-page #categorylist {
+	max-width: 1440px;
+	margin: auto;
+	padding: 3rem 3rem;
+} 
+
+.viewall-page .pagination-top {
+	margin-bottom: 3rem !important;
+}
+
+.viewall-page #categorylist-header {
+	color: var(--green) !important;
+}
