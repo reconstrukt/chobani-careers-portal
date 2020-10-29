@@ -229,12 +229,23 @@ body.coreCSB .bordercolorb6a533a1 {
 	color: var(--green);
 }
 
+.job-page #job-title {
+	font-family: "Chobani Serif Semibold", serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--green);
+	margin-top: 50px;
+}
+
 .job-page span, div, p {
-	font-family: 'Chobani Serif',serif;
+	font-family: 'Chobani Serif',serif !important;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: .2px;
 	color: var(--green);
+	font-style: initial !important;
 }
 
 .job-page #content .searchwell {
