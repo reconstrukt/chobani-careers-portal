@@ -253,11 +253,6 @@ body.coreCSB .bordercolorb6a533a1 {
 	display: none !important;
 }
 
-.job-page #rss-wrapper {
-	position: absolute;
-	right: 2rem;
-}
-
 .job-page span.jobdescription p {
 	padding: 10px 30px;
 }
