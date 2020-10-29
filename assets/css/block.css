@@ -368,7 +368,6 @@ body.coreCSB .bordercolorb6a533a1 {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 2;
-		margin-bottom: 16px !important;
 	}
 	
 	.job-page .jobTitle .visible-phone a:hover {
@@ -380,8 +379,12 @@ body.coreCSB .bordercolorb6a533a1 {
 	}
 
 	.job-page #job-title {
-		margin-top: 0;
-		margin-bottom: 15px;
+		margin-top: 32px;
+		margin-bottom: 16px;
+	}
+
+	.job-page div[aria-hidden="true"] .visible-phone {
+		display: none !important;
 	}
 }
 
