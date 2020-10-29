@@ -317,7 +317,17 @@ body.coreCSB .bordercolorb6a533a1 {
 
 @media only screen and (max-width: 768px) {
 	.job-page #rss-wrapper {
-		right: 0;
+		display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
+	}
+
+	.search-page #rss-wrapper {
+		display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
 	}
 
 	.job-page #job-title {
@@ -394,7 +404,8 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	margin: 0;
+	margin: auto;
+	max-width: 1440px;
 }
 
 .search-page .keyword-title {
@@ -439,3 +450,8 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	display: none;
 }
 
+@media only screen and (max-width: 768px) {
+	.search-page #search-wrapper .row .span6 {
+		display: none;
+	}
+}
