@@ -334,6 +334,55 @@ body.coreCSB .bordercolorb6a533a1 {
 	.job-page #job-title {
 		font-size: 32px;
 	}
+
+	.visible-phone {
+		display: none;
+	}
+	
+	.job-page .jobTitle .visible-phone {
+		float: initial !important;
+		margin-bottom: 2rem;
+		text-align: center;
+		position: absolute;
+		bottom: -11rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		display: block;
+	}
+	
+	.job-page .jobTitle .visible-phone a {
+		color: var(--green) !important;
+		font-family: 'Chobani Sans', serif !important;
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 0.2px;
+		padding: 17px 24px;
+		border-radius: 2px;
+		text-align: center;
+		background-color: var(--white) !important;
+		white-space: nowrap;
+		transition: all .3s cubic-bezier(.215,.61,.355,1);
+		position: absolute;
+		bottom: -23px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		margin-bottom: 16px !important;
+	}
+	
+	.job-page .jobTitle .visible-phone a:hover {
+		background-color: lightgrey !important;
+	}
+
+	.job-page #search-wrapper .row .span6 {
+		display: none;
+	}
+
+	.job-page #job-title {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
 }
 
 .job-page .jobLocation {
