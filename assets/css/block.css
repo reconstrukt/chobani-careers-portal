@@ -295,6 +295,10 @@ body.coreCSB .bordercolorb6a533a1 {
 	margin-bottom: 8rem;
 }
 
+.job-page .jobTitle {
+	position: relative;
+}
+
 .job-page .jobTitle .applylink {
 	float: initial !important;
 	margin-bottom: 2rem;
@@ -306,7 +310,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	z-index: 2;
 }
 
-.job-page .jobTitle .applylink a {
+.job-page .jobTitle .applylink a.dialogApplyBtn {
 	color: var(--green) !important;
 	font-family: 'Chobani Sans', serif !important;
 	font-size: 14px;
@@ -315,7 +319,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding: 17px 24px;
 	border-radius: 2px;
 	text-align: center;
-	background-color: var(--white);
+	background-color: var(--white) !important;
 	white-space: nowrap;
 	transition: all .3s cubic-bezier(.215,.61,.355,1);
 	position: absolute;
@@ -325,7 +329,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	z-index: 2;
 }
 
-.job-page .jobTitle .applylink a:hover {
+.job-page .jobTitle .applylink a.dialogApplyBtn:hover {
 	background-color: var(--grey) !important;
 }
 
