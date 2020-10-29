@@ -313,7 +313,7 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 .job-page .jobTitle .applylink a.dialogApplyBtn:hover {
-	background-color: var(--grey) !important;
+	background-color: lightgrey !important;
 }
 
 @media only screen and (max-width: 768px) {
