@@ -209,3 +209,9 @@ body.coreCSB .bordercolorb6a533a1 {
 #search-actions {
 	display: none !important;
 }
+
+/* job detail page */
+
+.job-page #innershell {
+  padding-top: 100px;
+}
