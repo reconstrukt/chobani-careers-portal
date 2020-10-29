@@ -105,7 +105,7 @@ hr {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 196px;
+	min-height: 210px;
 }
 
 .outershell div.searchwell a, .outershell div.search a {
@@ -372,6 +372,24 @@ body.coreCSB .bordercolorb6a533a1 {
 	margin: 0;
 }
 
+/* category page */
+
 .talentlanding-page #noresults {
 	display: none;
+}
+
+/* jobs search results page */
+
+.search-page #innershell {
+	padding-bottom: 0;
+}
+
+.search-page #innershell .inner {
+	padding-top: 100px;
+}
+
+.serach-page #innershell .inner .job-tile-result-container {
+	margin: auto;
+	max-width: 1440px;
+	padding: 64px;
 }
