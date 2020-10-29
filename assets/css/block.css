@@ -371,3 +371,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	width: 100%;
 	margin: 0;
 }
+
+.talentlanding-page #noresults {
+	display: none;
+}
