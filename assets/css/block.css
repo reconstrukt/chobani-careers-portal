@@ -389,6 +389,18 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	display: none;
 }
 
+.talentlanding-page #newFacets .optionsFacet:nth-of-type(2) {
+	display: none;
+}
+
+.talentlanding-page .searchResultsShell table th:nth-child(3) {
+	display: none;
+}
+
+.talentlanding-page .searchResultsShell table tr td:nth-child(3) {
+	display: none;
+}
+
 /* jobs search results page */
 
 .search-page #innershell {
