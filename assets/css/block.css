@@ -271,7 +271,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding: 10px 30px;
 }
 
-.job-page .jobCompany strong {
+.job-page .jobLocation  strong {
 	display: none !important;
 }
 
@@ -283,7 +283,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	display: none !important;
 }
 
-.job-page .jobCompany {
+.job-page .jobLocation  {
 	text-align: center;
 }
 
