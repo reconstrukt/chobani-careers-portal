@@ -464,15 +464,29 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 }
 
 .viewall-page #categorylist {
-	max-width: 1440px;
-	margin: auto;
+	max-width: 1440px !important;
+	margin: auto !important;
 	padding: 3rem 3rem;
-} 
+	text-align: center;
+}
 
-.viewall-page .pagination-top {
+.viewall-page #categorylist ul li {
+	margin-bottom: 0.25rem;
+}
+
+.viewall-page .pagination-label-row {
+	margin: auto;
+}
+
+.viewall-page .pagination-top .paginationShell {
 	margin-bottom: 3rem !important;
 }
 
 .viewall-page #categorylist-header {
 	color: var(--green) !important;
+	margin-bottom: 3rem;
+}
+
+.viewall-page #innershell {
+	padding-bottom: 0 !important;
 }
