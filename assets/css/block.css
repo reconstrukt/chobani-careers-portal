@@ -82,7 +82,7 @@ hr {
 	color: var(--green);
 }
 
-#body .outershell .btn, #body .outershell input[type="submit"] {
+#body:not(.job-page) .outershell .btn, #body .outershell input[type="submit"] {
 	color: var(--white) !important;
 	background-color: var(--brown) !important;
 }
@@ -299,6 +299,10 @@ body.coreCSB .bordercolorb6a533a1 {
 	position: relative;
 }
 
+.applylink {
+	display: none;
+}
+
 .job-page .jobTitle .applylink {
 	float: initial !important;
 	margin-bottom: 2rem;
@@ -308,6 +312,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
+	display: block;
 }
 
 .job-page .jobTitle .applylink a.dialogApplyBtn {
