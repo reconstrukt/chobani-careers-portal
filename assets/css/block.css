@@ -435,3 +435,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	display: none;
 }
 
+.searchResultsShell #searchresults tr td:nth-child(4) {
+	display: none;
+}
+
