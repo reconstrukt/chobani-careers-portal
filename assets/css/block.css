@@ -53,7 +53,6 @@ hr {
 
 .optionsFacet .optionsFacet-label {
 	margin-bottom: 5px;
-	padding-left: 1rem;
 	justify-content: flex-start;
 	color: var(--green);
 }
@@ -400,7 +399,7 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	padding: 64px;
 }
 
-.search-page #search-wrapper .row {
+.search-page #search-wrapper > .row {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
