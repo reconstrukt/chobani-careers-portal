@@ -398,7 +398,8 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 }
 
 .search-page .keyword-title {
-	max-width: calc(1440px - 6rem);
+	max-width: 1440px;
+	padding: 0 3rem;
 	margin: 1rem auto;
 	color: var(--brown) !important;
 	font-family: 'Chobani Sans', sans-serif !important;
@@ -406,7 +407,8 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 
 .search-page .inner #noresults {
 	margin-bottom: 0rem !important;
-	max-width: calc(1440px - 6rem);
+	max-width: 1440px;
+	padding: 0 3rem;
 }
 
 .search-page .breadcrumbtrail {
@@ -416,11 +418,13 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 /* global table styles */
 
 .searchResultsShell {
-	max-width: calc(1440px - 6rem);
+	max-width: 1440px;
+	padding: 0 3rem;
 }
 
 .pagination-top {
-	max-width: calc(1440px - 6rem);
+	max-width: 1440px;
+	padding: 0 3rem;
 }
 
 .searchResultsShell #searchresults {
