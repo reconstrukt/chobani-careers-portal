@@ -388,8 +388,15 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding-top: 100px;
 }
 
-.serach-page #innershell .inner .job-tile-result-container {
+.search-page #innershell .inner .job-tile-result-container {
 	margin: auto;
 	max-width: 1440px;
 	padding: 64px;
+}
+
+.search-page #search-wrapper .row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
 }
