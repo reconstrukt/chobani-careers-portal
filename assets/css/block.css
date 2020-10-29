@@ -271,6 +271,14 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding: 10px 30px;
 }
 
+.job-page .jobCompany,.jobDate,.jobCompany strong {
+	display: none !important;
+}
+
+.job-page .jobCompany,.jobDate,.jobCompany {
+	text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
 	.job-page #rss-wrapper {
 		right: 0;
