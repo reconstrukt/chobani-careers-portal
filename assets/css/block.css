@@ -427,6 +427,11 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	margin: 1rem auto;
 	color: var(--brown) !important;
 	font-family: 'Chobani Sans', sans-serif !important;
+	font-size: 16px;
+}
+
+.search-page .keyword-title .securitySearchQuery {
+	font-size: 16px !important;
 }
 
 .search-page .inner #noresults {
