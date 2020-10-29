@@ -431,7 +431,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	margin: 0;
 }
 
-body:not(.home-page):not(.talentlanding-page) #innershell .inner {
+body:not(.home-page) #innershell .inner {
 	padding-top: 100px;
 }
 
