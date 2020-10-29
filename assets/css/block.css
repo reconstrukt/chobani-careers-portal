@@ -220,10 +220,6 @@ body.coreCSB .bordercolorb6a533a1 {
 	padding-bottom: 100px;
 }
 
-.job-page .jobDisplay {
-	padding-top: 100px;
-}
-
 .job-page div > b {
 	font-size: 16px;
 	font-family: 'Chobani Serif Semibold', serif;
@@ -372,6 +368,10 @@ body.coreCSB .bordercolorb6a533a1 {
 	margin: 0;
 }
 
+#innershell .inner {
+	padding-top: 100px;
+}
+
 /* category page */
 
 .talentlanding-page #noresults {
@@ -382,10 +382,6 @@ body.coreCSB .bordercolorb6a533a1 {
 
 .search-page #innershell {
 	padding-bottom: 0;
-}
-
-.search-page #innershell .inner {
-	padding-top: 100px;
 }
 
 .search-page #innershell .inner .job-tile-result-container {
