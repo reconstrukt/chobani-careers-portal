@@ -400,3 +400,15 @@ body.coreCSB .bordercolorb6a533a1 {
 	width: 100%;
 	margin: 0;
 }
+
+.search-page .keyword-title {
+	max-width: calc(1440px - 6rem);
+	margin: 1rem auto;
+	color: var(--brown) !important;
+	font-family: 'Chobani Sans', sans-serif !important;
+}
+
+.search-page .inner #noresults {
+	padding: 0 3rem;
+	margin-bottom: 3rem !important;
+}
