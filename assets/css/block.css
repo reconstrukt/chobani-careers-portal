@@ -409,6 +409,28 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 .search-page .inner #noresults {
-	padding: 0 3rem;
-	margin-bottom: 3rem !important;
+	margin-bottom: 0rem !important;
+	max-width: calc(1440px - 6rem);
+}
+
+.search-page .breadcrumbtrail {
+	display: none;
+}
+
+/* global table styles */
+
+.searchResultsShell {
+	max-width: calc(1440px - 6rem);
+}
+
+.pagination-top {
+	max-width: calc(1440px - 6rem);
+}
+
+.hidden-phone {
+	display: none;
+}
+
+.searchResultsShell #searchresults {
+	text-align: center;
 }
