@@ -53,6 +53,7 @@ hr {
 
 .optionsFacet .optionsFacet-label {
 	margin-bottom: 5px;
+	margin-left: 1rem;
 	justify-content: flex-start;
 	color: var(--green);
 }
@@ -189,6 +190,7 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 #optionsFacetLoading {
+	margin-left: 1rem;
 	padding-left: 0 !important;
 }
 
