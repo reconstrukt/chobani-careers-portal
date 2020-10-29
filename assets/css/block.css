@@ -427,10 +427,11 @@ body.coreCSB .bordercolorb6a533a1 {
 	max-width: calc(1440px - 6rem);
 }
 
-.hidden-phone {
-	display: none;
-}
-
 .searchResultsShell #searchresults {
 	text-align: center;
 }
+
+.searchResultsShell #searchresults th:nth-child(4) {
+	display: none;
+}
+
