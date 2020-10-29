@@ -282,23 +282,6 @@ body.coreCSB .bordercolorb6a533a1 {
 	display: none !important;
 }
 
-.job-page .jobLocation  {
-	text-align: center;
-}
-
-.job-page .jobDate {
-	text-align: center;
-}
-
-.job-page .jobCompany {
-	text-align: center;
-	margin-bottom: 8rem;
-}
-
-.job-page .jobTitle {
-	position: relative;
-}
-
 .applylink {
 	display: none;
 }
@@ -346,4 +329,38 @@ body.coreCSB .bordercolorb6a533a1 {
 	.job-page #job-title {
 		font-size: 32px;
 	}
+}
+
+.job-page .jobLocation {
+	text-align: center;
+	margin-bottom: 0.25rem;
+}
+
+.job-page .jobLocation span {
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobDate {
+	text-align: center;
+	margin-bottom: 0.25rem;
+}
+
+.job-page .jobDate span {
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobCompany {
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+.job-page .jobCompany span {
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobTitle {
+	position: relative;
 }
