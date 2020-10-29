@@ -21,8 +21,6 @@ $(document).ready(function(){
 	if (getCategoryFromURL()) {
 		$('.main-filters .category').hide();
 		$('.job-category .category').text(getParameterByName('category'));
-		$('.search-filter').css('width', '50%');
-		$('.location').css('width', '35%');
 	} else {
 		$('.keywordsearch-button').text('Search All Jobs');
 	}
