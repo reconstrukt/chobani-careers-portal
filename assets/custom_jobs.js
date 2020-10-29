@@ -14,7 +14,11 @@ $(document).ready(function(){
 		return decodeURIComponent(results[2].replace(/\+/g, ' '));
 	}
 
-	if (getParameterByName('category')) {
+	function getCategoryFromURL(url = window.location.pathname) {
+		return url.split('/').length >= 2 && url.split('/')[2];
+	}
+
+	if (getCategoryFromURL()) {
 		$('.main-filters .category').hide();
 		$('.job-category .category').text(getParameterByName('category'));
 		$('.search-filter').css('width', '50%');
