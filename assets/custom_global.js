@@ -1,8 +1,5 @@
 chobaniTheme = window.chobaniTheme || {};
-
-$(document).ready(function(){
-	
-  chobaniTheme.header = `<header>
+chobaniTheme.header = `<header>
 	<div class="box-shadow container-fluid">
 		<div class="d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
 			<a href="/" class="navbar-brand d-flex align-items-center">
@@ -18,15 +15,13 @@ $(document).ready(function(){
 		</div>
 	</div>
 </header>
-`;
-  
-  chobaniTheme.main = `<main>
+`; 
+chobaniTheme.main = `<main>
 	<section class="job-category">
 		<h1 class="category text-center">%CATEGORY%</h1>
 	</section>
 	</main>`;
-  
-  chobaniTheme.footer = `<footer>
+chobaniTheme.footer = `<footer>
 <div class="container-fluid">
 	<svg class="chobani-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.46 58.75" role="presentation" aria-hidden="true" tabindex="-1" disabled="disabled" clickable="false" width="180px">
 		<title>Chobani</title>
@@ -49,7 +44,9 @@ $(document).ready(function(){
 	</div>
 </div>
 </footer>`;
-  
+
+$(document).ready(function(){
+	
   if ( $('body').hasClass('home-page') ) {
     console.log('chobani-theme: home page');
   }  
