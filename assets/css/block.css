@@ -237,7 +237,9 @@ body.coreCSB .bordercolorb6a533a1 {
 	text-align: center;
 	color: var(--green);
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
+
 
 .job-page span, div, p {
 	font-family: 'Chobani Serif',serif !important;
@@ -260,5 +262,9 @@ body.coreCSB .bordercolorb6a533a1 {
 @media only screen and (max-width: 768px) {
 	.job-page #rss-wrapper {
 		right: 0;
+	}
+
+	.job-page #job-title {
+		font-size: 32px;
 	}
 }
