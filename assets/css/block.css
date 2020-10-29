@@ -295,6 +295,11 @@ body.coreCSB .bordercolorb6a533a1 {
 	text-align: center;
 }
 
+.job-page .jobTitle .applylink {
+	float: initial !important;
+	margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 768px) {
 	.job-page #rss-wrapper {
 		right: 0;
