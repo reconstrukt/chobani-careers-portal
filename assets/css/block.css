@@ -132,6 +132,7 @@ div.inner > #job-table {
 div.inner > #job-table span {
 	font-size: 14px;
 	color: var(--green) !important;
+	font-family: "Chobani Serif", serif;
 }
 
 .job-list {
