@@ -477,6 +477,10 @@ body.coreCSB .bordercolorb6a533a1 {
 	font-family: "Chobani Serif Italic", serif !important;
 }
 
+.job-page #similar-jobs {
+	max-width: 730px !important;
+}
+
 body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	padding-top: 100px;
 }
