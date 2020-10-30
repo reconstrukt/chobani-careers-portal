@@ -732,6 +732,7 @@ main .job-category {
 main .job-category .category {
   margin: auto;
   color: var(--white);
+  white-space: nowrap;
   font-family: "Chobani Serif Semibold", serif;
 }
 
