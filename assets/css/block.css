@@ -80,16 +80,18 @@ hr {
 
 .searchwell .row>div>span {
 	color: var(--green);
+	font-family: "Chobani Sans", serif;
 }
 
 #body:not(.job-page) .outershell .btn, #body .outershell input[type="submit"] {
 	color: var(--white) !important;
 	background-color: var(--brown) !important;
+	font-family: "Chobani Sans", serif;
 }
 
 .searchwell input {
-	background-color: var(--green);
-	color: var(--white) !important;
+	border: 1px inset rgb(173, 169, 169) !important;
+	border-radius: 3px;
 }
 
 #keywordsearch .container-fluid .row:nth-of-type(2) > div{
@@ -110,6 +112,7 @@ hr {
 
 .outershell div.searchwell a, .outershell div.search a {
 	color: var(--green) !important;
+	font-family: "Chobani Sans", serif !important;
 }
 
 .optionsDiv select {
@@ -205,6 +208,10 @@ body.coreCSB .bordercolorb6a533a1 {
 #body .outershell a.btn:hover, #body .outershell a.btn:focus, #body .outershell .btn:hover, #body .outershell .btn:focus, #body .outershell input[type="submit"]:hover, #body .outershell input[type="submit"]:focus {
 	border-color: transparent !important;
 	text-decoration: none !important;
+}
+
+#body .outershell .btn {
+	border: none !important;
 }
 
 #search-actions {
