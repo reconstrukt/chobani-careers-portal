@@ -556,12 +556,13 @@ main .chobani-values .row {
 
 main .chobani-values .chobani-card .chobani-card-header {
   font-family: "Chobani Serif Semibold", serif;
+  margin-bottom: 0.75rem;
 }
 
 main .chobani-values .chobani-card .chobani-card-desc {
   font-family: "Chobani Serif", serif;
   width: 100%;
-  max-width: 250px;
+  max-width: 270px;
   text-align: center;
 }
 
@@ -572,10 +573,14 @@ main .chobani-openings {
 
 main .chobani-openings .container-fluid > p {
   font-family: "Chobani Serif", serif;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 }
 
 @media only screen and (max-width: 768px) {
+  main .chobani-values .row {
+    margin-bottom: 0;
+  }
+
   main .chobani-values .chobani-card .chobani-card-desc {
     max-width: 100%;
     font-size: 20px;
@@ -593,7 +598,11 @@ main .chobani-openings .container-fluid > p {
 
 main .chobani-openings .container-fluid .col-md-4 {
   display: flex;
-  height: 50px;
+  height: 32px;
+}
+
+main .chobani-openings .container-fluid .col-md-4 a.h6 {
+  font-size: 16px !important;
 }
 
 main .chobani-openings .container-fluid a {
