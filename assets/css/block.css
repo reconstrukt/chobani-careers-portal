@@ -241,7 +241,23 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 
-.job-page span, div, p {
+.job-page span {
+	font-family: 'Chobani Serif',serif !important;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+	color: var(--green);
+}
+
+.job-page div {
+	font-family: 'Chobani Serif',serif !important;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+	color: var(--green);
+}
+
+.job-page p {
 	font-family: 'Chobani Serif',serif !important;
 	font-size: 16px;
 	line-height: 1.5;
