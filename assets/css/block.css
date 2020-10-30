@@ -235,6 +235,10 @@ body.coreCSB .bordercolorb6a533a1 {
 
 /* job detail page */
 
+.job-page .back-to-search-wrapper i {
+	top: 2px !important;
+}
+
 .job-page #innershell {
 	padding-bottom: 0;
 }
@@ -316,7 +320,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	display: none !important;
 }
 
-.job-page .jobCompany strong {
+.job-page .jobCompany {
 	display: none !important;
 }
 
