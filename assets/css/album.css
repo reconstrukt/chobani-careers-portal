@@ -138,7 +138,7 @@ main .careers .bg-wrap {
     height: calc(100%);
     width: 100%;
     bottom: 1px;
-    top: auto;
+    top: 1rem;
     transform: translate(-50%);
   }
 
