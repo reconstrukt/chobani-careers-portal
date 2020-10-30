@@ -85,7 +85,7 @@ hr {
 
 #body:not(.job-page) .outershell .btn, #body .outershell input[type="submit"] {
 	color: var(--white) !important;
-	background-color: var(--brown) !important;
+	background-color: var(--green) !important;
 	font-family: "Chobani Sans", serif;
 }
 
@@ -131,6 +131,7 @@ div.inner > #job-table {
 
 div.inner > #job-table span {
 	font-size: 14px;
+	color: var(--green) !important;
 }
 
 .job-list {
