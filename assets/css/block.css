@@ -489,7 +489,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	max-width: 730px !important;
 }
 
-body:not(.home-page):not(.talentlanding-page) #innershell .inner {
+body:not(.home-page):not(.talentlanding-page):not(.search-page) #innershell .inner {
 	padding-top: 100px;
 	position: relative;
 }
@@ -539,6 +539,7 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	color: var(--brown) !important;
 	font-family: 'Chobani Sans', sans-serif !important;
 	font-size: 16px;
+	display: none;
 }
 
 .search-page .keyword-title .securitySearchQuery {
