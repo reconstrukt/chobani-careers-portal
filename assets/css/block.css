@@ -240,6 +240,11 @@ body.coreCSB .bordercolorb6a533a1 {
 	top: 2px !important;
 }
 
+.job-page #back-to-search {
+	z-index: 1000;
+	position: absolute;
+}
+
 .job-page #innershell {
 	padding-bottom: 0;
 }
@@ -466,7 +471,7 @@ body.coreCSB .bordercolorb6a533a1 {
 	margin: auto;
 	max-width: 1440px;
 	position: absolute;
-	top: 100px;
+	top: 104px;
 }
 
 .job-page #search-wrapper .row {
