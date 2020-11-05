@@ -188,6 +188,7 @@ body.coreCSB .bordercolorb6a533a1 {
 #rss-label {
 	color: var(--green) !important;
 	font-family: "Chobani Sans", serif !important;
+	line-height: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -464,6 +465,8 @@ body.coreCSB .bordercolorb6a533a1 {
 .job-page #search-wrapper {
 	margin: auto;
 	max-width: 1440px;
+	position: absolute;
+	top: 100px;
 }
 
 .job-page #search-wrapper .row {
@@ -483,6 +486,7 @@ body.coreCSB .bordercolorb6a533a1 {
 
 body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	padding-top: 100px;
+	position: relative;
 }
 
 /* category page */
