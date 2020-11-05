@@ -5,11 +5,22 @@ $(document).ready(function(){
     return;
   }
   
-  $("#header").replaceWith(chobaniTheme.header);
-  var mainSection = getParameterByName('category') ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
+	function getParameterByName(name, url = window.location.href) {
+		name = name.replace(/[\[\]]/g, '\\$&');
+		var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+		results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, ' '));
+	}
+  
+	var mainSection = getParameterByName('category') ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
 
   $("#footer").replaceWith(chobaniTheme.footer);
+
+  $("#jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+
 
 });

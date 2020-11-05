@@ -29,6 +29,8 @@ $(document).ready(function(){
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
 
-  $("#footer").replaceWith(chobaniTheme.footer);
+	$("#footer").replaceWith(chobaniTheme.footer);
+	
+	$("#jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
 
 });
