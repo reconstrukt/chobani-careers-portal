@@ -58,6 +58,6 @@ $(document).ready(function(){
   }  
   if ( $('body').hasClass('search-page') ) {
     console.log('chobani-theme found: search results page');
-  }
-  
+	}
+
 });
