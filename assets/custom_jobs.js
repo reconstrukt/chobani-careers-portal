@@ -31,6 +31,7 @@ $(document).ready(function(){
 
 	$("#footer").replaceWith(chobaniTheme.footer);
 	
-	$(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
-
+  setTimeout(function() {
+    $(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+  }, 500);
 });
