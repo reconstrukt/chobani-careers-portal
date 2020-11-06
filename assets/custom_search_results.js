@@ -14,7 +14,7 @@ $(document).ready(function(){
 		return decodeURIComponent(results[2].replace(/\+/g, ' '));
 	}
   
-	var mainSection = getParameterByName('category') || getParameterByName('category') !== 'null' ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
+	var mainSection = getParameterByName('category') && getParameterByName('category') !== 'null' ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
 
