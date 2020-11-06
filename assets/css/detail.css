@@ -36,6 +36,16 @@ html {
 }
 
 @font-face {
+  font-family: 'Chobani Serif Italic';
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerifWeb-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerifWeb-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerifWeb-LightItalic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerifWeb-LightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Chobani Sans';
   src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
   src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */

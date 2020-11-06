@@ -14,11 +14,13 @@ $(document).ready(function(){
 		return decodeURIComponent(results[2].replace(/\+/g, ' '));
 	}
 
-	if (getParameterByName('category')) {
+	function getCategoryFromURL(url = window.location.pathname) {
+		return url.split('/').length >= 2 && url.split('/')[2];
+	}
+
+	if (getCategoryFromURL()) {
 		$('.main-filters .category').hide();
 		$('.job-category .category').text(getParameterByName('category'));
-		$('.search-filter').css('width', '50%');
-		$('.location').css('width', '35%');
 	} else {
 		$('.keywordsearch-button').text('Search All Jobs');
 	}
@@ -40,6 +42,16 @@ $(document).ready(function(){
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
 
-  $("#footer").replaceWith(chobaniTheme.footer);
+	$("#footer").replaceWith(chobaniTheme.footer);
+	
+	$(".jobAlertsSearchForm").submit(function(e) {
+		$(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+		return true;
+	});
+
+	$("#searchfilter").submit(function(e) {
+		$("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+		return true;
+	});
 
 });

@@ -53,7 +53,7 @@ hr {
 
 .optionsFacet .optionsFacet-label {
 	margin-bottom: 5px;
-	padding-left: 1rem;
+	margin-left: 1rem;
 	justify-content: flex-start;
 	color: var(--green);
 }
@@ -80,16 +80,18 @@ hr {
 
 .searchwell .row>div>span {
 	color: var(--green);
+	font-family: "Chobani Sans", serif;
 }
 
-#body .outershell .btn, #body .outershell input[type="submit"] {
+#body:not(.job-page) .outershell .btn, #body .outershell input[type="submit"] {
 	color: var(--white) !important;
-	background-color: var(--brown) !important;
+	background-color: var(--green) !important;
+	font-family: "Chobani Sans", serif;
 }
 
 .searchwell input {
-	background-color: var(--green);
-	color: var(--white) !important;
+	border: 1px inset rgb(173, 169, 169) !important;
+	border-radius: 3px;
 }
 
 #keywordsearch .container-fluid .row:nth-of-type(2) > div{
@@ -105,11 +107,12 @@ hr {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 196px;
+	min-height: 300px;
 }
 
 .outershell div.searchwell a, .outershell div.search a {
 	color: var(--green) !important;
+	font-family: "Chobani Sans", serif !important;
 }
 
 .optionsDiv select {
@@ -124,6 +127,21 @@ div.inner > #job-table {
 	width: 100%;
 	max-width: 1440px;
 	background: transparent;
+}
+
+div.inner span.paginationLabel {
+	color: var(--green) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+div.inner table thead span a {
+	color: var(--green) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+div.inner table tbody span {
+	color: var(--green) !important;
+	font-family: "Chobani Serif", serif !important;
 }
 
 .job-list {
@@ -168,8 +186,16 @@ body.coreCSB .bordercolorb6a533a1 {
 	max-width: 1440px !important;
 }
 
-#rss-label {
+body:not(.job-page) #rss-label {
 	color: var(--green) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+	line-height: 16px;
+}
+
+body.job-page #rss-label {
+	color: var(--green) !important;
+	font-family: "Chobani Serif", serif !important;
+	line-height: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -190,6 +216,7 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 #optionsFacetLoading {
+	margin-left: 1rem;
 	padding-left: 0 !important;
 }
 
@@ -206,12 +233,399 @@ body.coreCSB .bordercolorb6a533a1 {
 	text-decoration: none !important;
 }
 
+#body .outershell .btn {
+	border: none !important;
+}
+
 #search-actions {
 	display: none !important;
 }
 
 /* job detail page */
 
+.job-page #back-to-search {
+	z-index: 1000;
+	position: absolute;
+}
+
 .job-page #innershell {
-  padding-top: 100px;
+	padding-bottom: 0;
+}
+
+.job-page #content {
+	padding-bottom: 100px;
+}
+
+.job-page div > b {
+	font-size: 16px;
+	font-family: 'Chobani Serif Semibold', serif;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+	color: var(--green);
+}
+
+.job-page #job-title {
+	font-family: "Chobani Serif Semibold", serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--green);
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+.job-page span {
+	font-family: 'Chobani Serif',serif !important;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+	color: var(--green);
+}
+
+.job-page div {
+	font-family: 'Chobani Serif',serif !important;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+	color: var(--green);
+}
+
+.jobDisplay .job {
+	max-width: 700px;
+	margin: auto;
+}
+
+.job-page p {
+	font-family: 'Chobani Serif',serif !important;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .2px;
+	color: var(--green);
+}
+
+.job-page #content .searchwell {
+	display: none !important;
+}
+
+.job-page span.jobdescription p {
+	padding: 10px 30px;
+}
+
+.job-page #content span.jobdescription ul {
+	padding: 10px 30px;
+}
+
+.job-page .jobdescription > div > div > div > div {
+	padding: 10px 30px;
+}
+
+.job-page .jobLocation  strong {
+	display: none !important;
+}
+
+.job-page .jobDate strong {
+	display: none !important;
+}
+
+.job-page .jobCompany {
+	display: none !important;
+}
+
+.applylink {
+	display: none;
+}
+
+.job-page .jobTitle .applylink {
+	float: initial !important;
+	margin-bottom: 2rem;
+	text-align: center;
+	position: absolute;
+	bottom: -11rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	display: block;
+}
+
+.job-page .jobTitle .applylink a.dialogApplyBtn {
+	color: var(--green) !important;
+	font-family: 'Chobani Sans', serif !important;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.2px;
+	padding: 17px 24px;
+	border-radius: 2px;
+	text-align: center;
+	background-color: var(--white) !important;
+	white-space: nowrap;
+	transition: all .3s cubic-bezier(.215,.61,.355,1);
+	position: absolute;
+	bottom: -23px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.job-page .jobTitle .applylink a.dialogApplyBtn:hover {
+	background-color: lightgrey !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.job-page #rss-wrapper {
+		display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
+	}
+
+	.search-page #rss-wrapper {
+		display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
+	}
+
+	.job-page #job-title {
+		font-size: 32px;
+	}
+
+	.visible-phone {
+		display: none;
+	}
+	
+	.job-page .jobTitle .visible-phone {
+		float: initial !important;
+		margin-bottom: 2rem;
+		text-align: center;
+		position: absolute;
+		bottom: -11rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		display: block;
+	}
+	
+	.job-page .jobTitle .visible-phone a {
+		color: var(--green) !important;
+		font-family: 'Chobani Sans', serif !important;
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 0.2px;
+		padding: 17px 24px;
+		border-radius: 2px;
+		text-align: center;
+		background-color: var(--white) !important;
+		white-space: nowrap;
+		transition: all .3s cubic-bezier(.215,.61,.355,1);
+		position: absolute;
+		bottom: -23px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+	
+	.job-page .jobTitle .visible-phone a:hover {
+		background-color: lightgrey !important;
+	}
+
+	.job-page #search-wrapper .row .span6 {
+		display: none;
+	}
+
+	.job-page #job-title {
+		margin-top: 32px;
+		margin-bottom: 16px;
+	}
+
+	.job-page div[aria-hidden="true"] .visible-phone {
+		display: none !important;
+	}
+}
+
+.job-page .jobLocation {
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+.job-page .jobLocation span {
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobDate {
+	text-align: center;
+	margin-bottom: 0.25rem;
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobCompany span {
+	color: var(--brown) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+}
+
+.job-page .jobTitle {
+	position: relative;
+}
+
+.job-page #search-wrapper {
+	margin: auto;
+	max-width: 1440px;
+	position: absolute;
+	top: 104px;
+}
+
+.job-page #search-wrapper .row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+}
+
+.job-page span em span {
+	font-family: "Chobani Serif Italic", serif !important;
+}
+
+.job-page #similar-jobs {
+	max-width: 730px !important;
+}
+
+body:not(.home-page):not(.talentlanding-page) #innershell .inner {
+	padding-top: 100px;
+	position: relative;
+}
+
+body.search-page main + #innershell #content .inner {
+	padding-top: 0;
+}
+
+/* category page */
+
+.talentlanding-page #noresults {
+	display: none;
+}
+
+.talentlanding-page #newFacets .optionsFacet:nth-of-type(2) {
+	display: none;
+}
+
+.talentlanding-page .searchResultsShell table th:nth-child(3) {
+	display: none;
+}
+
+.talentlanding-page .searchResultsShell table tr td:nth-child(3) {
+	display: none;
+}
+
+/* jobs search results page */
+
+.search-page #innershell {
+	padding-bottom: 0;
+}
+
+.search-page #innershell .inner .job-tile-result-container {
+	margin: auto;
+	max-width: 1440px;
+	padding: 64px;
+}
+
+.search-page #search-wrapper > .row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+	max-width: 1440px;
+}
+
+.search-page .keyword-title {
+	max-width: 1440px;
+	padding: 0 3rem;
+	margin: 1rem auto;
+	color: var(--brown) !important;
+	font-family: 'Chobani Sans', sans-serif !important;
+	font-size: 16px;
+}
+
+.search-page .keyword-title .securitySearchQuery {
+	font-size: 16px !important;
+}
+
+.search-page .inner #noresults {
+	margin-bottom: 0rem !important;
+	max-width: 1440px;
+	padding: 0 3rem;
+}
+
+.search-page .breadcrumbtrail {
+	display: none;
+}
+
+/* global table styles */
+
+.searchResultsShell {
+	max-width: 1440px;
+	padding: 0 3rem;
+}
+
+.pagination-top {
+	max-width: 1440px;
+	padding: 0 3rem;
+}
+
+.searchResultsShell #searchresults {
+	text-align: center;
+}
+
+.searchResultsShell #searchresults th:nth-child(4) {
+	display: none;
+}
+
+.searchResultsShell #searchresults tr td:nth-child(4) {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.search-page #search-wrapper .row .span6 {
+		display: none;
+	}
+}
+
+/* view all jobs styles */
+
+.viewall-page .breadcrumbtrail {
+	display: none;
+}
+
+.viewall-page #categorylist {
+	max-width: 1440px !important;
+	margin: auto !important;
+	padding: 3rem 3rem;
+	text-align: center;
+}
+
+.viewall-page #categorylist ul li {
+	margin-bottom: 0.25rem;
+}
+
+.viewall-page .pagination-label-row {
+	margin: auto;
+}
+
+.viewall-page .pagination-top .paginationShell {
+	margin-bottom: 3rem !important;
+}
+
+.viewall-page #categorylist-header {
+	color: var(--green) !important;
+	margin-bottom: 3rem;
+}
+
+.viewall-page #innershell {
+	padding-bottom: 0 !important;
+}
+
+.pagination li a {
+	font-family: "Chobani Sans", sans-serif !important;
 }

@@ -138,12 +138,13 @@ main .careers .bg-wrap {
     height: calc(100%);
     width: 100%;
     bottom: 1px;
-    top: auto;
+    top: 1rem;
     transform: translate(-50%);
   }
 
   main .careers .bg-wrap .bg-mask {
     background-size: 100% auto;
+    margin-top: 1rem;
   }
 }
 
@@ -205,7 +206,7 @@ main .careers .bg-careers-land {
 
 main .careers .bg-careers-land .land-header {
   color: rgb(108, 112, 47);
-  font-family: 'Chobani Sans', serif;
+  font-family: 'Chobani Sans', serif !important;
   font-weight: normal;
   font-size: 15px;
   line-height: 1.25;
@@ -356,7 +357,7 @@ main .chobani-openings .c-title {
 }
 
 .slick-dots li button:before {
-  font-size: 12px !important;
+  font-size: 32px !important;
 }
 
 main .chobani-culture {
@@ -365,6 +366,11 @@ main .chobani-culture {
 }
 
 @media only screen and (max-width: 768px) {
+  .slick-dots {
+    bottom: -33px !important;
+    z-index: 100;
+  }
+  
   main .chobani-culture {
     margin-top: 7rem;
   }
@@ -492,8 +498,8 @@ main .chobani-culture .carousel-bottom-bg {
 
 @media only screen and (max-width: 768px) {
   main .chobani-culture .carousel-bottom-bg {
-    bottom: -52px;
-    padding: 0 30px;
+    bottom: -34px;
+    padding: 0 18px;
   }
 }
 
@@ -550,12 +556,13 @@ main .chobani-values .row {
 
 main .chobani-values .chobani-card .chobani-card-header {
   font-family: "Chobani Serif Semibold", serif;
+  margin-bottom: 0.75rem;
 }
 
 main .chobani-values .chobani-card .chobani-card-desc {
   font-family: "Chobani Serif", serif;
   width: 100%;
-  max-width: 250px;
+  max-width: 270px;
   text-align: center;
 }
 
@@ -566,10 +573,14 @@ main .chobani-openings {
 
 main .chobani-openings .container-fluid > p {
   font-family: "Chobani Serif", serif;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 }
 
 @media only screen and (max-width: 768px) {
+  main .chobani-values .row {
+    margin-bottom: 0;
+  }
+
   main .chobani-values .chobani-card .chobani-card-desc {
     max-width: 100%;
     font-size: 20px;
@@ -597,7 +608,7 @@ main .chobani-openings .container-fluid a {
 
 main .chobani-openings-description {
   padding-top: 64px;
-  padding-bottom: 128px;
+  padding-bottom: 80px;
 }
 
 main .chobani-openings-description p {
@@ -607,7 +618,7 @@ main .chobani-openings-description p {
 
 main .chobani-openings-description p > a {
   color: var(--blue) !important;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Chobani Serif", serif;
   text-decoration: underline;
 }
@@ -640,7 +651,7 @@ main .chobani-openings-description p.for-assistance a {
 main .chobani-openings-description img {
   margin-left: auto;
   margin-right: auto; 
-  margin-top: 160px;
+  margin-top: 150px;
   width: 100%;
   margin-bottom: 80px;
 }
@@ -721,6 +732,7 @@ main .job-category {
 main .job-category .category {
   margin: auto;
   color: var(--white);
+  white-space: nowrap;
   font-family: "Chobani Serif Semibold", serif;
 }
 
@@ -763,7 +775,11 @@ main .job-filter .main-filters button.search-jobs {
   height: 40px;
 }
 
-main .job-filter .main-filters .location,.category {
+main .job-filter .main-filters .location {
+  width: 25%;
+}
+
+main .job-filter .main-filters .category {
   width: 25%;
 }
 

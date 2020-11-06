@@ -172,7 +172,7 @@ $(document).ready(function(){
     title: 'Administration',
     url: '/go/Administration/6847550/'
   },{
-    title: 'Cafe',
+    title: 'Café',
     url: '/go/Cafe/6847650/'
   },{
     title: 'Communication',
