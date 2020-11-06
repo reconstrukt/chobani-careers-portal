@@ -20,14 +20,14 @@ $(document).ready(function(){
 
   $("#footer").replaceWith(chobaniTheme.footer);
 
-	$(".jobAlertsSearchForm").on("submit", function() {
+	$(".jobAlertsSearchForm").on("submit", function(e) {
 		$(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
-		$(".jobAlertsSearchForm").submit();
+		return true;
 	});
 
-	$("#searchfilter").on("submit", function() {
+	$("#searchfilter").on("submit", function(e) {
 		$("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
-		$("#searchfilter").submit();
+		return true;
 	});
 
 });
