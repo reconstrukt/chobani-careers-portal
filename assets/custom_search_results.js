@@ -20,12 +20,12 @@ $(document).ready(function(){
 
   $("#footer").replaceWith(chobaniTheme.footer);
 
-	$(".jobAlertsSearchForm").on("submit", function(e) {
+	$(".jobAlertsSearchForm").submit(function(e) {
 		$(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
 		return true;
 	});
 
-	$("#searchfilter").on("submit", function(e) {
+	$("#searchfilter").submit(function(e) {
 		$("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
 		return true;
 	});
