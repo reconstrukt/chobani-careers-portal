@@ -188,8 +188,10 @@ body.coreCSB .bordercolorb6a533a1 {
 
 #rss-label {
 	color: var(--green) !important;
-	font-family: "Chobani Sans", serif !important;
+	font-family: "Chobani Serif", serif !important;
 	line-height: 16px;
+	margin-top: 3px;
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -236,10 +238,6 @@ body.coreCSB .bordercolorb6a533a1 {
 }
 
 /* job detail page */
-
-.job-page .back-to-search-wrapper i {
-	top: 2px !important;
-}
 
 .job-page #back-to-search {
 	z-index: 1000;
