@@ -23,7 +23,20 @@ $(document).ready(function(){
 		$('.keywordsearch-button').text('Search All Jobs');
 	}
   
-	var mainSection = getParameterByName('category') ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
+  var catName = '';
+  if ( catName == '') {
+    if ( getParameterByName('category') ) {
+      catName = getParameterByName('category');
+    }
+  }
+  if ( catName == '') {
+    if ( $('#category-name').length > 0 ) {
+      catName = $('#category-name').text();
+    }
+  }
+  if ( catName == '') catName = 'All Jobs';
+  
+	var mainSection = chobaniTheme.main.replace("%CATEGORY%", catName);
 
 	$("#header").replaceWith(chobaniTheme.header + mainSection);
 
