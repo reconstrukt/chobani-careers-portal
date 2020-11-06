@@ -489,9 +489,13 @@ body.coreCSB .bordercolorb6a533a1 {
 	max-width: 730px !important;
 }
 
-body:not(.home-page):not(.talentlanding-page):not(.search-page) #innershell .inner {
+body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	padding-top: 100px;
 	position: relative;
+}
+
+body.search-page main + #innershell .inner {
+	padding-top: 0;
 }
 
 /* category page */
