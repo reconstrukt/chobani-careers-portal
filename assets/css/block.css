@@ -186,12 +186,16 @@ body.coreCSB .bordercolorb6a533a1 {
 	max-width: 1440px !important;
 }
 
-#rss-label {
+body:not(.job-page) #rss-label {
+	color: var(--green) !important;
+	font-family: "Chobani Sans", sans-serif !important;
+	line-height: 16px;
+}
+
+body.job-page #rss-label {
 	color: var(--green) !important;
 	font-family: "Chobani Serif", serif !important;
 	line-height: 16px;
-	margin-top: 3px;
-	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -620,4 +624,8 @@ body.search-page main + #innershell #content .inner {
 
 .viewall-page #innershell {
 	padding-bottom: 0 !important;
+}
+
+.pagination li a {
+	font-family: "Chobani Sans", sans-serif !important;
 }
