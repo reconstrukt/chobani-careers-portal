@@ -134,7 +134,7 @@ div.inner span.paginationLabel {
 	font-family: "Chobani Sans", sans-serif !important;
 }
 
-div.inner table thead span {
+div.inner table thead span a {
 	color: var(--green) !important;
 	font-family: "Chobani Sans", sans-serif !important;
 }
