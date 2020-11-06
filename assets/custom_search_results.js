@@ -22,6 +22,7 @@ $(document).ready(function(){
 
   setTimeout(function() {
     $(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+    $("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
   }, 500);
 
 
