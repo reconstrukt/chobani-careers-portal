@@ -20,13 +20,14 @@ $(document).ready(function(){
 
   $("#footer").replaceWith(chobaniTheme.footer);
 
-  var interval = setInterval(function() {
-    if ($(".jobAlertsSearchForm").length > 0 && $("#searchfilter").length > 0) {
-      $(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
-      $("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
-      clearInterval(interval);
-    }
-  }, 300);
+	$(".jobAlertsSearchForm").on("submit", function() {
+		$(".jobAlertsSearchForm").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+		$(".jobAlertsSearchForm").submit();
+	});
 
+	$("#searchfilter").on("submit", function() {
+		$("#searchfilter").append(`<input name="category" type="hidden" value="` + getParameterByName('category') +`">`);
+		$("#searchfilter").submit();
+	});
 
 });
