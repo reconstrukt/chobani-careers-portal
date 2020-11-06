@@ -36,7 +36,7 @@ $(document).ready(function(){
       catName = $('#category-name').text();
     }
   }
-  if ( catName == '') catName = 'All Jobs';
+  if ( catName == '') catName = 'Jobs at Chobani';
   
 	var mainSection = chobaniTheme.main.replace("%CATEGORY%", catName);
 
