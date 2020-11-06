@@ -494,7 +494,7 @@ body:not(.home-page):not(.talentlanding-page) #innershell .inner {
 	position: relative;
 }
 
-body.search-page main + #innershell .inner {
+body.search-page main + #innershell #content .inner {
 	padding-top: 0;
 }
 
