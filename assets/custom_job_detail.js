@@ -7,7 +7,7 @@ $(document).ready(function(){
   
   var profileLink = $('#header .profileWidget a');  
 	$("#header").replaceWith(chobaniTheme.header);
-  $('header').find('.js-chobani-header-links').append( profileLink );
+  $('header').find('.js-chobani-header-links').append( $( profileLink[0] ) );
   
   $("#footer").replaceWith(chobaniTheme.footer);
 
