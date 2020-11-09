@@ -5,8 +5,10 @@ $(document).ready(function(){
     return;
   }
   
-	// $("#header").replaceWith(chobaniTheme.header);
-
-  // $("#footer").replaceWith(chobaniTheme.footer);
+  var profileLink = $('#header .profileWidget a');  
+	$("#header").replaceWith(chobaniTheme.header);
+  $('header').find('.js-chobani-header-links').append( profileLink );
+  
+  $("#footer").replaceWith(chobaniTheme.footer);
 
 });
