@@ -5,8 +5,8 @@ $(document).ready(function(){
     return;
   }
   
-	$("#header").replaceWith(chobaniTheme.header);
+	// $("#header").replaceWith(chobaniTheme.header);
 
-  $("#footer").replaceWith(chobaniTheme.footer);
+  // $("#footer").replaceWith(chobaniTheme.footer);
 
 });
