@@ -6,7 +6,7 @@ $(document).ready(function(){
   }
   
   var profileLinks = $('#header .profileWidget a');
-  var profileLink = $( profileLink[0] );
+  var profileLink = $( profileLinks[0] );
   profileLink.removeAttr( 'class' );
   profileLink.addClass( 'font-weight-light mr-5 h6' );
   
