@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function( $ ){
 	
   if ( ! $('body').hasClass('viewall-page') ) {
     // stop manipulating DOM if not on job detail page 

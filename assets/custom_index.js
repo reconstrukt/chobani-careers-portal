@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function( $ ){
   
   if ( ! $('body').hasClass('home-page') ) {
     // stop manipulating DOM if not on homepage
