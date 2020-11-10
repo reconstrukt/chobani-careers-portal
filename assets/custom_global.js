@@ -45,7 +45,12 @@ chobaniTheme.footer = `<footer>
 </div>
 </footer>`;
 
-$(document).ready(function(){
+jQuery(document).ready(function( $ ){
+  
+  if ( $('body').hasClass('careerSite') ) {
+    console.log('chobani-theme should exit');
+    return;
+  }
 	
   if ( $('body').hasClass('home-page') ) {
     console.log('chobani-theme found: home page');
