@@ -71,8 +71,6 @@ jQuery(document).ready(function( $ ){
     }
   }
   
-  /*
-  
   if ( ok === true ) {
     
     $('body').append( `<!-- global font -->
@@ -108,6 +106,5 @@ jQuery(document).ready(function( $ ){
     
   }
   
-  */
 
 });
