@@ -48,21 +48,62 @@ chobaniTheme.footer = `<footer>
 jQuery(document).ready(function( $ ){
   
   if ( $('body').hasClass('careerSite') ) {
-    console.log('chobani-theme should exit');
+    console.log('chobani-theme unsupported page: exiting');
     return;
   }
+  
+  var ok, classes = ['home-page', 'talentlanding-page', 'job-page', 'search-page', 'viewall-page'];
+  
+  for ( var i in classes ) {
+    if ( $('body').hasClass( classes[ i ] ) ) {      
+      console.log('chobani-theme supported page found: ' + classes[ i ]);
+      ok = true;
+      break;
+    }
+  }
+  
+  if ( ok === true ) {
+    
+    $('head').append( `<!-- global font -->
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="//chobani-assets-public.s3.amazonaws.com/fonts/stylesheet.css" />
+<!-- chobani style overrides -->
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/block.css" />` );
+    
+  }
+  
+  //
 	
   if ( $('body').hasClass('home-page') ) {
-    console.log('chobani-theme found: home page');
+    
+    $('head').append( `<!-- homepage only -->
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/album.css" />
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/detail.css" />
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/slick.css" />
+<link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/slick-theme.css" />
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/vendor/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/vendor/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/bootstrap.min.js"></script>
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/vendor/slick.min.js"></script>
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_index.js"></script>` );
+    
   }  
   if ( $('body').hasClass('talentlanding-page') ) {
-    console.log('chobani-theme found: job category page');
+    $('head').append( `<!-- job category only -->
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_jobs.js"></script>` );
   }  
   if ( $('body').hasClass('job-page') ) {
-    console.log('chobani-theme found: job detail page');
+    $('head').append( `<!-- job detail only -->
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_job_detail.js"></script>` );
   }  
   if ( $('body').hasClass('search-page') ) {
-    console.log('chobani-theme found: search results page');
+    $('head').append( `<!-- search results only -->
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_search_results.js"></script>` );
+	}
+  if ( $('body').hasClass('viewall-page') ) {
+    $('head').append( `<!-- view all jobs only -->
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_view_all_jobs.js"></script>` );
 	}
 
 });
