@@ -64,7 +64,7 @@ jQuery(document).ready(function( $ ){
   
   if ( ok === true ) {
     
-    $('head').append( `<!-- global font -->
+    $('body').append( `<!-- global font -->
 <link rel="stylesheet" type="text/css" class="chobani-theme" href="//chobani-assets-public.s3.amazonaws.com/fonts/stylesheet.css" />
 
 <!-- chobani style overrides -->
