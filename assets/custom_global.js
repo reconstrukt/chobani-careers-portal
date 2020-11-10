@@ -48,9 +48,13 @@ chobaniTheme.footer = `<footer>
 jQuery(document).ready(function( $ ){
   
   if ( $('body').hasClass('careerSite') ) {
-    $('head').find('.chobani-theme').each(function(){
+    $('script.chobani-theme').each(function(){
+      console.log( 'removed chobani-theme script tag: ' + $(this).attr('src') );
       $(this).remove();
-      console.log( 'removed chobani-theme tag: ' + $(this).attr('href') );
+    });
+    $('link.chobani-theme').each(function(){
+      console.log( 'removed chobani-theme style tag: ' + $(this).attr('href') );
+      $(this).remove();
     });
     
     console.log('chobani-theme unsupported page: exiting');
