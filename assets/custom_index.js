@@ -229,7 +229,7 @@ jQuery(document).ready(function( $ ){
     title: 'Supply Chain',
     url: '/go/Supply-Chain/6849450/'
   },{
-    title: 'Transporation',
+    title: 'Transportation',
     url: '/go/Transporation/6849550/'
   }];
   
