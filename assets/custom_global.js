@@ -73,12 +73,10 @@ jQuery(document).ready(function( $ ){
   
   if ( ok === true ) {
     
-    $('body').append( `<!-- global font -->
+    var chobaniInjection = `<!-- global font -->
 <link rel="stylesheet" type="text/css" class="chobani-theme" href="//chobani-assets-public.s3.amazonaws.com/fonts/stylesheet.css" />
-
 <!-- chobani style overrides -->
 <link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/block.css" />
-
 <!-- homepage only -->
 <link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" class="chobani-theme" href="https://chobani-careers.reconstrukt.net/assets/css/font-awesome.min.css" />
@@ -91,18 +89,16 @@ jQuery(document).ready(function( $ ){
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/bootstrap.min.js"></script>
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/vendor/slick.min.js"></script>
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_index.js"></script>
-
 <!-- job category only -->
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_jobs.js"></script>
-
 <!-- job detail only -->
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_job_detail.js"></script>
-
 <!-- search results only -->
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_search_results.js"></script>
-
 <!-- view all jobs only -->
-<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_view_all_jobs.js"></script>` );
+<script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_view_all_jobs.js"></script>`;
+    
+    $('body').append( chobaniInjection ).addClass('chobani-theme-applied');
     
   }
   

@@ -629,3 +629,7 @@ body.search-page main + #innershell #content .inner {
 .pagination li a {
 	font-family: "Chobani Sans", sans-serif !important;
 }
+
+body.chobani-theme-applied {
+  padding-top: 0 !important;
+}
