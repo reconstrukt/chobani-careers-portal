@@ -101,9 +101,9 @@ jQuery(document).ready(function( $ ){
 
 <!-- view all jobs only -->
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_view_all_jobs.js"></script>` );
-
-    */
     
-  }  
+  }
+  
+  */
 
 });
