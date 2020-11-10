@@ -48,6 +48,11 @@ chobaniTheme.footer = `<footer>
 jQuery(document).ready(function( $ ){
   
   if ( $('body').hasClass('careerSite') ) {
+    $('head').find('.chobani-theme').each(function(){
+      $(this).remove();
+      console.log( 'removed chobani-theme tag: ' + $(this).attr('href') );
+    });
+    
     console.log('chobani-theme unsupported page: exiting');
     return;
   }
@@ -61,6 +66,8 @@ jQuery(document).ready(function( $ ){
       break;
     }
   }
+  
+  /*
   
   if ( ok === true ) {
     
@@ -94,6 +101,8 @@ jQuery(document).ready(function( $ ){
 
 <!-- view all jobs only -->
 <script type="text/javascript" class="chobani-theme" src="https://chobani-careers.reconstrukt.net/assets/custom_view_all_jobs.js"></script>` );
+
+    */
     
   }  
 
