@@ -396,7 +396,8 @@ body.job-page #rss-label {
 	}
 	
 	.job-page .jobTitle .visible-phone {
-		float: initial !important;
+		/*
+    float: initial !important;
 		margin-bottom: 2rem;
 		text-align: center;
 		position: absolute;
@@ -405,19 +406,8 @@ body.job-page #rss-label {
 		transform: translateX(-50%);
 		z-index: 2;
 		display: block;
+    */
 	}
-  
-  #qaModal {
-    float: initial !important;
-		margin-bottom: 2rem;
-		text-align: center;
-		position: absolute;
-		bottom: -11rem;
-		left: 50%;
-		transform: none;
-		z-index: 2;
-		display: block;
-  }
 	
 	.job-page .jobTitle .visible-phone a {
 		color: var(--green) !important;
@@ -432,7 +422,7 @@ body.job-page #rss-label {
 		white-space: nowrap;
 		transition: all .3s cubic-bezier(.215,.61,.355,1);
 		position: absolute;
-		bottom: -23px;
+		/* bottom: -23px; */
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 2;
@@ -458,7 +448,7 @@ body.job-page #rss-label {
 
 .job-page .jobLocation {
 	text-align: center;
-	margin-bottom: 8rem;
+	margin-bottom: 4rem auto 2rem auto;
 }
 
 .job-page .jobLocation span {
