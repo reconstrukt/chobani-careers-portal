@@ -21,7 +21,7 @@ div.customPlugin {
 
 div#skip {
 	display: none !important;
-}
+} 
 
 div.inner > div:not(.customPlugin) {
 	/* display: none !important; */
@@ -395,7 +395,7 @@ body.job-page #rss-label {
 		display: none;
 	}
 	
-	.job-page .jobTitle .visible-phone {
+	.job-page .jobTitle .visible-phone :not(#qaModal) {
 		float: initial !important;
 		margin-bottom: 2rem;
 		text-align: center;
