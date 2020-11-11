@@ -11,6 +11,7 @@ chobaniTheme.header = `<header>
 			<div class="d-md-flex d-none js-chobani-header-links">
 				<a class="font-weight-light ml-5 h6" href="/">Home</a>
 				<a class="font-weight-light ml-5 h6 js-chobani-all-jobs" href="/go/All-Jobs/7063450/">View All Jobs</a>
+        <a class="font-weight-light ml-5 h6" href="#" onclick="j2w.TC.handleViewProfileAction(event)" xml:lang="en-US" lang="en-US">My Profile</a>
 			</div>
 		</div>
 	</div>
