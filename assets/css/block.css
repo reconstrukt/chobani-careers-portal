@@ -395,7 +395,7 @@ body.job-page #rss-label {
 		display: none;
 	}
 	
-	.job-page .jobTitle .visible-phone :not(#qaModal) {
+	.job-page .jobTitle .visible-phone {
 		float: initial !important;
 		margin-bottom: 2rem;
 		text-align: center;
@@ -406,6 +406,18 @@ body.job-page #rss-label {
 		z-index: 2;
 		display: block;
 	}
+  
+  #qaModal {
+    float: initial !important;
+		margin-bottom: 2rem;
+		text-align: center;
+		position: absolute;
+		bottom: -11rem;
+		left: 50%;
+		transform: none;
+		z-index: 2;
+		display: block;
+  }
 	
 	.job-page .jobTitle .visible-phone a {
 		color: var(--green) !important;
