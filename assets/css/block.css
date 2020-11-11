@@ -555,7 +555,7 @@ body.search-page main + #innershell #content .inner {
 	font-size: 16px !important;
 }
 
-.search-page .inner #noresults {
+.inner #noresults {
 	margin-bottom: 0rem !important;
 	max-width: 1440px;
 	padding: 0 3rem;
