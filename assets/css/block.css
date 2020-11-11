@@ -448,7 +448,7 @@ body.job-page #rss-label {
 
 .job-page .jobLocation {
 	text-align: center;
-	margin-bottom: 4rem auto 2rem auto;
+	margin: 4rem auto 2rem auto;
 }
 
 .job-page .jobLocation span {
