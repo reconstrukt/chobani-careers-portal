@@ -510,10 +510,6 @@ body.search-page main + #innershell #content .inner {
 
 /* category page */
 
-.talentlanding-page #noresults {
-	display: none;
-}
-
 .talentlanding-page #newFacets .optionsFacet:nth-of-type(2) {
 	display: none;
 }
