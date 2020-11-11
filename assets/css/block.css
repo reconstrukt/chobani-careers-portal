@@ -195,7 +195,7 @@ body:not(.job-page) #rss-label {
 body.job-page #rss-label {
 	color: var(--green) !important;
 	font-family: "Chobani Serif", serif !important;
-	line-height: 16px;
+	line-height: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -250,7 +250,7 @@ body.job-page #rss-label {
 }
 
 .job-page #back-to-search i {
-	padding-top: 2px;
+	padding-top: 2.5px;
 }
 
 .job-page #innershell {
