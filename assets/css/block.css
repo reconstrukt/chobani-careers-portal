@@ -246,6 +246,11 @@ body.job-page #rss-label {
 .job-page #back-to-search {
 	z-index: 1000;
 	position: absolute;
+	display: flex;
+}
+
+.job-page #back-to-search i {
+	padding-top: 2px;
 }
 
 .job-page #innershell {
