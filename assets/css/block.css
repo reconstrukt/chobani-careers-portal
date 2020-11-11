@@ -244,7 +244,7 @@ body.job-page #rss-label {
 /* job detail page */
 
 .job-page #back-to-search {
-	z-index: 1000;
+	z-index: 1;
 	position: absolute;
 	display: flex;
 }
