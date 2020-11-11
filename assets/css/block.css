@@ -545,7 +545,7 @@ body.search-page main + #innershell #content .inner {
 .keyword-title {
 	max-width: 1440px;
 	padding: 0 3rem;
-	margin: 1rem auto;
+	margin: 1rem auto 0 auto;
 	color: var(--brown) !important;
 	font-family: 'Chobani Sans', sans-serif !important;
 	font-size: 16px;
@@ -559,6 +559,13 @@ body.search-page main + #innershell #content .inner {
 	margin-bottom: 0rem !important;
 	max-width: 1440px;
 	padding: 0 3rem;
+	margin-top: 1rem;
+}
+
+.inner #noresults.alert-warning {
+	color: var(--green);
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .search-page .breadcrumbtrail {
