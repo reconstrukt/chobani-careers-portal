@@ -195,7 +195,7 @@ body:not(.job-page) #rss-label {
 body.job-page #rss-label {
 	color: var(--green) !important;
 	font-family: "Chobani Serif", serif !important;
-	line-height: 16px;
+	line-height: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -244,8 +244,13 @@ body.job-page #rss-label {
 /* job detail page */
 
 .job-page #back-to-search {
-	z-index: 1000;
+	z-index: 1;
 	position: absolute;
+	display: flex;
+}
+
+.job-page #back-to-search i {
+	padding-top: 2.5px;
 }
 
 .job-page #innershell {
@@ -505,10 +510,6 @@ body.search-page main + #innershell #content .inner {
 
 /* category page */
 
-.talentlanding-page #noresults {
-	display: none;
-}
-
 .talentlanding-page #newFacets .optionsFacet:nth-of-type(2) {
 	display: none;
 }
@@ -541,23 +542,30 @@ body.search-page main + #innershell #content .inner {
 	max-width: 1440px;
 }
 
-.search-page .keyword-title {
+.keyword-title {
 	max-width: 1440px;
 	padding: 0 3rem;
-	margin: 1rem auto;
+	margin: 1rem auto 0 auto;
 	color: var(--brown) !important;
 	font-family: 'Chobani Sans', sans-serif !important;
 	font-size: 16px;
 }
 
-.search-page .keyword-title .securitySearchQuery {
+.keyword-title .securitySearchQuery {
 	font-size: 16px !important;
 }
 
-.search-page .inner #noresults {
+.inner #noresults {
 	margin-bottom: 0rem !important;
 	max-width: 1440px;
 	padding: 0 3rem;
+	margin-top: 1rem;
+}
+
+.inner #noresults.alert-warning {
+	color: var(--green);
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .search-page .breadcrumbtrail {
