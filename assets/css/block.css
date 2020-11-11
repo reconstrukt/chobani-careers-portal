@@ -542,7 +542,7 @@ body.search-page main + #innershell #content .inner {
 	max-width: 1440px;
 }
 
-.search-page .keyword-title {
+.keyword-title {
 	max-width: 1440px;
 	padding: 0 3rem;
 	margin: 1rem auto;
@@ -551,7 +551,7 @@ body.search-page main + #innershell #content .inner {
 	font-size: 16px;
 }
 
-.search-page .keyword-title .securitySearchQuery {
+.keyword-title .securitySearchQuery {
 	font-size: 16px !important;
 }
 
