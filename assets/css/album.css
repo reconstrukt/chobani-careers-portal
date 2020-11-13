@@ -786,7 +786,7 @@ main .job-filter .main-filters .category {
 
 @media only screen and (max-width: 768px) {
   main .job-filter .main-filters .location,.category,.search-filter  {
-    width: 50% !important;
+    width: 90% !important;
   }
 }
 
