@@ -49,6 +49,7 @@ div.inner > #search-wrapper {
 @media only screen and (max-width: 768px) {
 	div.inner > #search-wrapper {
 		padding-top: 0;
+		background-position: top 0px right -150px;
 	}
 }
 
@@ -118,6 +119,12 @@ hr {
 	background-repeat: no-repeat !important;
 	left: 0;
 	top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	#content .searchwell {
+		background-position: top 0px left -150px !important;
+	}
 }
 
 .outershell div.searchwell, .outershell div.search {
