@@ -112,10 +112,10 @@ hr {
 }
 
 #content .searchwell {
-	background: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_left.png);
-	background-size: auto 100%;
-	background-position: top left;
-	background-repeat: no-repeat;
+	background: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_left.png) !important;
+	background-size: auto 100% !important;
+	background-position: top left !important;
+	background-repeat: no-repeat !important;
 	left: 0;
 	top: 0;
 }
