@@ -38,7 +38,7 @@ div.inner > #job-table {
 }
 
 div.inner > #search-wrapper {
-	background-image: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_right.png);
+	background: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_right.png), var(--banner-bg);
 	background-size: auto 100%;
 	background-position: top right;
 	background-repeat: no-repeat;
@@ -112,7 +112,7 @@ hr {
 }
 
 #content .searchwell {
-	background-image: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_left.png);
+	background: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_left.png);
 	background-size: auto 100%;
 	background-position: top left;
 	background-repeat: no-repeat;
