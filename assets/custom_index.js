@@ -170,67 +170,67 @@ jQuery(document).ready(function( $ ){
   
   var jobCats = [{
     title: 'Administration',
-    url: '/go/Administration/6847550/'
+    url: '/go/Administration/8608500/'
   },{
     title: 'Café',
-    url: '/go/Cafe/6847650/'
+    url: '/go/Cafe/8608600/'
   },{
     title: 'Communication',
-    url: '/go/Communication/6847750/'
+    url: '/go/Communication/8608700/'
   },{
     title: 'Corporate Affairs',
-    url: '/go/Corporate-Affairs/6847850/'
+    url: '/go/Corporate-Affairs/8608800/'
   },{
     title: 'Engineering',
-    url: '/go/Engineering/6847950/'
+    url: '/go/Engineering/8608900/'
   },{
     title: 'Finance',
-    url: '/go/Finance/6848050/'
+    url: '/go/Finance/8609000/'
   },{
     title: 'Information Technology',
-    url: '/go/Information-Technology/6848150/'
+    url: '/go/Information-Technology/8609100/'
   },{
     title: 'Innovation',
-    url: '/go/Innovation/6848250/'
+    url: '/go/Innovation/8609200/'
   },{
     title: 'Legal',
-    url: '/go/Legal/6848350/'
+    url: '/go/Legal/8609300/'
   },{
     title: 'Logistics',
-    url: '/go/Logistics/6848450/'
+    url: '/go/Logistics/8609400/'
   },{
     title: 'Marketing',
-    url: '/go/Marketing/6848550/'
+    url: '/go/Marketing/8609500/'
   },{
     title: 'People',
-    url: '/go/People/6848650/'
+    url: '/go/People/8609600/'
   },{
-    title: 'Planning and Product  Supply',
-    url: '/go/Planning-and-Product-Supply/6848750/'
+    title: 'Planning and Product Supply',
+    url: '/go/Planning-and-Product-Supply/8609700/'
   },{
     title: 'Plant Operations',
-    url: '/go/Plant-Operations/6848850/'
+    url: '/go/Plant-Operations/8609800/'
   },{
     title: 'Procurement',
-    url: '/go/Procurement/6848950/'
+    url: '/go/Procurement/8609900/'
   },{
     title: 'Quality',
-    url: '/go/Quality/6849050/'
+    url: '/go/Quality/8610000/ '
   },{
     title: 'Research & Development',
-    url: '/go/Research-&amp;-Development/6849150/'
+    url: '/go/Research-&amp;-Development/8610100/'
   },{
     title: 'Sales',
-    url: '/go/Sales/6849250/'
+    url: '/go/Sales/8610200/'
   },{
     title: 'Sales & Operations Planning',
-    url: '/go/Sales-&amp;-Operations-Planning/6849350/'
+    url: '/go/Sales-&amp;-Operations-Planning/8610300/'
   },{
     title: 'Supply Chain',
-    url: '/go/Supply-Chain/6849450/'
+    url: '/go/Supply-Chain/8610400/'
   },{
     title: 'Transportation',
-    url: '/go/Transporation/6849550/'
+    url: '/go/Transporation/8610500/'
   }];
   
   var categoryContainer = $('.js-chobani-job-categories');
