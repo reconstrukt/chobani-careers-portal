@@ -166,7 +166,13 @@ jQuery(document).ready(function( $ ){
 		var zigzagHeight = $('.bg-wrap').parent().height();
 		console.log(zigzagHeight);
 		$('.bg-wrap').css('width', zigzagHeight);
-	})
+	});
+  
+  var allJobsLink = $('.js-chobani-all-jobs');
+  allJobsLink.attr('src', '/go/All-Jobs/8610600/');
+  
+  var allOpenPositions = $('.js-chobani-view-open-options');
+  allOpenPositions.attr('src', '/go/All-Jobs/8610600/');
   
   var jobCats = [{
     title: 'Administration',
