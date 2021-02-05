@@ -41,7 +41,7 @@ chobaniTheme.footer = `<footer>
 		</div>
 	</div>
 	<div class="d-flex copyright justify-content-md-start justify-content-center">
-		©2021 Chobani, LLC. All Rights Reserved.
+		©%CURRENTYEAR% Chobani, LLC. All Rights Reserved.
 	</div>
 </div>
 </footer>`;
@@ -92,6 +92,11 @@ jQuery(document).ready(function( $ ){
     console.log('chobani-theme did not find supported class: exiting');
     return;
   }
+  
+  // copyright year
+  
+  var currentYear = (new Date().getFullYear()).toString();
+  chobaniTheme.footer = chobaniTheme.footer.replace("%CURRENTYEAR%", currentYear);
   
   // homepage special case
   

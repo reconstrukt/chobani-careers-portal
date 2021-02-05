@@ -276,4 +276,12 @@ jQuery(document).ready(function( $ ){
   
   categoryContainer.html( html );
   
+  // copyright year
+  
+  var copyrightContainer = $('footer .copyright');
+  var copyrightText = copyrightContainer.text();
+  var currentYear = (new Date().getFullYear()).toString();
+  copyrightText = copyrightText.replace('2020', currentYear);
+  copyrightContainer.text( copyrightText );
+  
 });
