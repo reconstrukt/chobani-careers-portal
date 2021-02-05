@@ -169,10 +169,10 @@ jQuery(document).ready(function( $ ){
 	});
   
   var allJobsLink = $('.js-chobani-all-jobs');
-  allJobsLink.attr('src', '/go/All-Jobs/8610600/');
+  allJobsLink.attr('href', '/go/All-Jobs/8610600/');
   
-  var allOpenPositions = $('.js-chobani-view-open-options');
-  allOpenPositions.attr('src', '/go/All-Jobs/8610600/');
+  var allOpenPositions = $('.view-open-options');
+  allOpenPositions.attr('href', '/go/All-Jobs/8610600/');
   
   var jobCats = [{
     title: 'Administration',
