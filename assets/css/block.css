@@ -319,9 +319,13 @@ body.job-page #rss-label {
 	color: var(--green);
 }
 
+.job-page h2 {
+	color: var(--green);
+}
+
 .jobDisplay .job {
 	max-width: 700px;
-	margin: auto;
+	margin: 4rem auto;
 }
 
 .job-page p {
