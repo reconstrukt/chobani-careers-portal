@@ -46,6 +46,9 @@ chobaniTheme.footer = `<footer>
 </div>
 </footer>`;
 
+chobaniTheme.env = window.location.host == 'careers.chobani.com' ? 
+  'production' : 'staging';
+
 jQuery(document).ready(function( $ ){
   
   if ( $('body').hasClass('careerSite') ) {

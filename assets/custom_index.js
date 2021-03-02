@@ -168,11 +168,16 @@ jQuery(document).ready(function( $ ){
 		$('.bg-wrap').css('width', zigzagHeight);
 	});
   
+  var allJobsURL = '/go/All-Jobs/8610600/';
+  if ( chobaniTheme.env != 'production' ) {
+    allJobsURL = '/go/All-Jobs/7063450/';
+  }
   var allJobsLink = $('.js-chobani-all-jobs');
-  allJobsLink.attr('href', '/go/All-Jobs/8610600/');
-  
+  allJobsLink.attr('href', allJobsURL);
   var allOpenPositions = $('.view-open-options');
-  allOpenPositions.attr('href', '/go/All-Jobs/8610600/');
+  allOpenPositions.attr('href', allJobsURL);
+  
+  // prod URLs
   
   var jobCats = [{
     title: 'Administration',
@@ -238,6 +243,75 @@ jQuery(document).ready(function( $ ){
     title: 'Transportation',
     url: '/go/Transporation/8610500/'
   }];
+  
+  // staging URLs
+  
+  if ( chobaniTheme.env != 'production' ) {
+    jobCats = [{
+      title: 'Administration',
+      url: '/go/Administration/6847550/'
+    },{
+      title: 'Café',
+      url: '/go/Cafe/6847650/'
+    },{
+      title: 'Communication',
+      url: '/go/Communication/6847750/'
+    },{
+      title: 'Corporate Affairs',
+      url: '/go/Corporate-Affairs/6847850/'
+    },{
+      title: 'Engineering',
+      url: '/go/Engineering/6847950/'
+    },{
+      title: 'Finance',
+      url: '/go/Finance/6848050/'
+    },{
+      title: 'Information Technology',
+      url: '/go/Information-Technology/6848150/'
+    },{
+      title: 'Innovation',
+      url: '/go/Innovation/6848250/'
+    },{
+      title: 'Legal',
+      url: '/go/Legal/6848350/'
+    },{
+      title: 'Logistics',
+      url: '/go/Logistics/6848450/'
+    },{
+      title: 'Marketing',
+      url: '/go/Marketing/6848550/'
+    },{
+      title: 'People',
+      url: '/go/People/6848650/'
+    },{
+      title: 'Planning and Product  Supply',
+      url: '/go/Planning-and-Product-Supply/6848750/'
+    },{
+      title: 'Plant Operations',
+      url: '/go/Plant-Operations/6848850/'
+    },{
+      title: 'Procurement',
+      url: '/go/Procurement/6848950/'
+    },{
+      title: 'Quality',
+      url: '/go/Quality/6849050/'
+    },{
+      title: 'Research & Development',
+      url: '/go/Research-&amp;-Development/6849150/'
+    },{
+      title: 'Sales',
+      url: '/go/Sales/6849250/'
+    },{
+      title: 'Sales & Operations Planning',
+      url: '/go/Sales-&amp;-Operations-Planning/6849350/'
+    },{
+      title: 'Supply Chain',
+      url: '/go/Supply-Chain/6849450/'
+    },{
+      title: 'Transportation',
+      url: '/go/Transporation/6849550/'
+    }];
+  }
   
   var categoryContainer = $('.js-chobani-job-categories');
   categoryContainer.empty();
