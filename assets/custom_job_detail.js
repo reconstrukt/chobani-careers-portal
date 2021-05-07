@@ -15,5 +15,12 @@ jQuery(document).ready(function( $ ){
   // $('header').find('.js-chobani-header-links').append( profileLink );
   
   $("#footer").replaceWith(chobaniTheme.footer);
+  
+  var allJobsURL = '/go/All-Jobs/8610600/';
+  if ( chobaniTheme.env != 'production' ) {
+    allJobsURL = '/go/All-Jobs/7063450/';
+  }
+  var allJobsLink = $('.js-chobani-all-jobs');
+  allJobsLink.attr('href', allJobsURL);
 
 });

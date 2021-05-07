@@ -14,4 +14,11 @@ jQuery(document).ready(function( $ ){
     var category = $(this).text();
     $(this).attr('href', href + '?category=' + category);
   })
+  
+  var allJobsURL = '/go/All-Jobs/8610600/';
+  if ( chobaniTheme.env != 'production' ) {
+    allJobsURL = '/go/All-Jobs/7063450/';
+  }
+  var allJobsLink = $('.js-chobani-all-jobs');
+  allJobsLink.attr('href', allJobsURL);
 });
