@@ -37,7 +37,7 @@ chobaniTheme.footer = `<footer>
 			<a href="https://www.chobani.com/terms-and-conditions/" target="_blank">Terms & Conditions</a>
 		</div>
 		<div>
-			<a href="https://www.chobani.com/california-privacy-rights/" target="_blank">CA Employee and Job Applicant Privacy Notice</a>
+			<a href="https://chobani.com/california-employee-job-applicant-privacy-notice" target="_blank">CA Employee and Job Applicant Privacy Notice</a>
 		</div>
 	</div>
 	<div class="d-flex copyright justify-content-md-start justify-content-center">
