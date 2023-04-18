@@ -308,36 +308,16 @@ main .carousel .slide-card .right-content .right-content-header {
   font-family: "Chobani Serif Semibold", serif;
 }
 
-main .chobani-perks .c-title {
-  font-family: "Chobani Sans", sans-serif !important;
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0.3px;
-  font-weight: 200;
-}
-
-main .chobani-culture .c-title {
-  font-family: "Chobani Sans", sans-serif !important;
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0.3px;
-  font-weight: 200;
-}
-
-main .chobani-values .c-title {
-  font-family: "Chobani Sans", sans-serif !important;
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0.3px;
-  font-weight: 200;
-}
-
+main .chobani-perks .c-title,
+main .chobani-culture .c-title,
+main .chobani-values .c-title,
 main .chobani-openings .c-title {
-  font-family: "Chobani Sans", sans-serif !important;
-  font-size: 20px;
-  line-height: 1.25;
+  font-family: "Chobani Serif", serif;
+  font-size: 48px;
+  line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.3px;
-  font-weight: 200;
+  color: #1a3c34;
 }
 
 .slick-dots {
