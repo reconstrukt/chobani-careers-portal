@@ -611,14 +611,19 @@ main .chobani-openings-description p.h1 {
   font-size: 48px;
 }
 
-main .chobani-openings-description p.for-assistance {
+main .chobani-openings-description p.for-assistance,
+main .chobani-openings-description p.for-assistance a {
   font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 768px) {
   main .chobani-openings-description p.for-assistance {
-    font-size: 20px;
     line-height: 0.5;
+  }
+
+  main .chobani-openings-description p.for-assistance,
+  main .chobani-openings-description p.for-assistance a {
+    font-size: 1.2rem;
   }
 
   main .chobani-openings-description p.look-for-job {
