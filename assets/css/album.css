@@ -89,7 +89,7 @@ main {
 }
 
 main .careers .bg-wrap .bg-left {
-  background-image: url("https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/di-hero.png");
+  background-image: url("https://chobani-careers.reconstrukt.net/assets/images/di-hero.png");
   background-size: cover;
   background-position: 50%;
   height: calc(100% - 5px);
