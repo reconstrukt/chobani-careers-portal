@@ -560,6 +560,12 @@ main .chobani-openings .container-fluid > p {
   margin: auto; 
 }
 
+@media only screen and (min-width: 1024px) {
+  main .chobani-values.chobani-milestones .container-fluid {
+    padding: 80px 200px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   main .chobani-values .row {
     margin-bottom: 0;
