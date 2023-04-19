@@ -603,7 +603,8 @@ main .chobani-openings-description {
 
 main .chobani-openings-description p {
   font-family: "Chobani Serif", serif;
-  max-width: 500px;
+  max-width: 80%;
+  color: #1A3C3473;
 }
 
 main .chobani-openings-description p > a {
