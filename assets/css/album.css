@@ -433,8 +433,7 @@ main .chobani-culture .slide-card .video .image-preview {
   transition-delay: .15s;
   opacity: 1;
   z-index: 1;
-  left: -1px;
-  width: calc(100% + 2px);
+  left: 0;
   width: 100%;
   padding-bottom: 56%;
   position: relative;
