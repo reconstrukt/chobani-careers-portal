@@ -311,7 +311,8 @@ main .carousel .slide-card .right-content .right-content-header {
 main .chobani-perks .c-title,
 main .chobani-culture .c-title,
 main .chobani-values .c-title,
-main .chobani-openings .c-title {
+main .chobani-openings .c-title,
+main .chobani-openings-description .c-title {
   font-family: "Chobani Serif", serif;
   font-size: 48px;
   line-height: 1.17;
@@ -609,6 +610,7 @@ main .chobani-openings-description .didnt-find {
 main .chobani-openings-description p {
   font-family: "Chobani Serif", serif;
   color: #1A3C3473;
+  width: 95%;
 }
 
 main .chobani-openings-description p > a {
@@ -624,7 +626,9 @@ main .chobani-openings-description p.h1 {
 
 main .chobani-openings-description p.for-assistance,
 main .chobani-openings-description p.for-assistance a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #1a3c34 !important;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
