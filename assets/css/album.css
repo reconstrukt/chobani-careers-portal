@@ -321,6 +321,10 @@ main .chobani-openings-description .c-title {
   color: #1a3c34;
 }
 
+main .chobani-openings-description .c-title {
+  width: 100% !important;
+}
+
 .slick-dots {
   bottom: -50px !important;
   z-index: 100;
