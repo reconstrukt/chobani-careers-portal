@@ -155,7 +155,7 @@ main .careers .c-header {
   font-size: 48px;
   line-height: 1.17;
   font-weight: 400;
-  letter-spacing: 0.3px;
+  letter-spacing: 0px;
   color: #1a3c34;
 }
 
@@ -601,9 +601,14 @@ main .chobani-openings-description {
   padding-bottom: 80px;
 }
 
+main .chobani-openings-description .didnt-find {
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
 main .chobani-openings-description p {
   font-family: "Chobani Serif", serif;
-  max-width: 80%;
   color: #1A3C3473;
 }
 
