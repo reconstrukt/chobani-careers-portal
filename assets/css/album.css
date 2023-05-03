@@ -18,30 +18,30 @@ html {
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: 'Chobani Serif Semibold';
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
-      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Semibold.woff2') format('woff2'),
+      url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Semibold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chobani Serif';
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
-      url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSerif-Regular.woff') format('woff');
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Regular.eot'); /* IE9 Compat Modes */
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Regular.woff2') format('woff2'),
+      url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSerif-Regular.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chobani Sans';
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/reconstrukt/chobani-careers-portal@latest/assets/fonts/ChobaniSans-Regular.woff') format('woff');
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSans-Regular.woff2') format('woff2'),
+       url('https://chobani-careers.reconstrukt.net/assets/fonts/ChobaniSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -301,11 +301,11 @@ main .carousel .slide-card .right-content .right-content-desc {
 
 
 main .carousel .slide-card .right-content .right-content-desc strong {
-  font-family: "Chobani Serif Semibold", serif;
+  font-family: "Chobani Serif", serif;
 }
 
 main .carousel .slide-card .right-content .right-content-header {
-  font-family: "Chobani Serif Semibold", serif;
+  font-family: "Chobani Serif", serif;
 }
 
 main .chobani-perks .c-title,
@@ -511,7 +511,7 @@ main .chobani-values .container-fluid > p {
 }
 
 main .chobani-values .container-fluid > p > span {
-  font-family: "Chobani Serif Semibold", serif;
+  font-family: "Chobani Serif", serif;
   margin-right: 4px;
 }
 
