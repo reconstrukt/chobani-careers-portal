@@ -157,6 +157,7 @@ main .careers .c-header {
   font-weight: 400;
   letter-spacing: 0px;
   color: #1a3c34;
+  letter-spacing: -.5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -200,7 +201,7 @@ main .careers .bg-careers-land {
   main .careers .bg-careers-land {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 80px;
   }
 }
@@ -317,7 +318,7 @@ main .chobani-openings-description .c-title {
   font-size: 48px;
   line-height: 1.17;
   font-weight: 400;
-  letter-spacing: 0.3px;
+  letter-spacing: -0.5px;
   color: #1a3c34;
 }
 
