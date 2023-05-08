@@ -166,7 +166,6 @@ main .careers .c-header {
   }
 
   main .careers .c-header {
-    font-size: 28px;
     width: 80%;
   }
 
@@ -589,6 +588,10 @@ main .chobani-openings .container-fluid > p {
   main .chobani-openings {
     padding-top: 32px;
   }
+  
+  #careers-section-openings .c-title {
+    margin-top: 40px;
+  }
 }
 
 main .chobani-openings .container-fluid .col-md-4 {
@@ -599,6 +602,15 @@ main .chobani-openings .container-fluid .col-md-4 {
 main .chobani-openings .container-fluid a {
   font-family: "Chobani Serif", serif;
   margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  main .chobani-openings .container-fluid .col-md-4 {
+    height: 30px;
+  }
+  main .chobani-openings .container-fluid .col-md-4 a {
+    font-size: 16px;
+  }
 }
 
 main .chobani-openings-description {
@@ -639,6 +651,7 @@ main .chobani-openings-description p.for-assistance a {
 @media only screen and (max-width: 768px) {
   main .chobani-openings-description p.for-assistance {
     line-height: 0.5;
+    margin-top: 1.5rem!important;
   }
 
   main .chobani-openings-description p.for-assistance,
