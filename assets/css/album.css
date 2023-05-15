@@ -286,7 +286,7 @@ main .carousel .slide-card img {
 @media only screen and (max-width: 768px) {
   main .carousel .slide-card .right-content {
     width: 100%;
-    height: 480px;
+    height: 520px;
   }
   
   main .carousel .slide-card img {
@@ -539,7 +539,7 @@ main .chobani-values .chobani-card .image-header {
   margin-bottom: 40px;
 }
 
-main .chobani-values.chobani-milestones .container-fluid > p {
+main .chobani-values.chobani-milestones .container-fluid > p.h5 {
   font-size: 18px;
 }
 
