@@ -153,7 +153,7 @@ main .careers .bg-wrap {
 main .careers .c-header {
   font-family: "Chobani Serif", serif;
   font-size: 48px;
-  line-height: 1.17;
+  line-height: 1;
   font-weight: 400;
   letter-spacing: 0px;
   color: #1a3c34;
@@ -170,7 +170,7 @@ main .careers .c-header {
   }
 
   main .careers .c-content {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -299,6 +299,9 @@ main .carousel .slide-card .right-content .right-content-desc {
   font-family: "Chobani Serif", serif;
 }
 
+main .chobani-perks .carousel .slide-card .right-content .right-content-desc {
+  font-size: 18px;
+}
 
 main .carousel .slide-card .right-content .right-content-desc strong {
   font-family: "Chobani Serif", serif;
@@ -315,7 +318,7 @@ main .chobani-openings .c-title,
 main .chobani-openings-description .c-title {
   font-family: "Chobani Serif", serif;
   font-size: 48px;
-  line-height: 1.17;
+  line-height: 1;
   font-weight: 400;
   letter-spacing: -0.5px;
   color: #1a3c34;
@@ -358,7 +361,7 @@ main .chobani-culture {
   }
   
   main .chobani-culture {
-    margin-top: 7rem;
+    margin-top: 32px;
   }
 
   main .chobani-values:first-of-type .container-fluid {
@@ -536,6 +539,10 @@ main .chobani-values .chobani-card .image-header {
   margin-bottom: 40px;
 }
 
+main .chobani-values.chobani-milestones .container-fluid > p {
+  font-size: 18px;
+}
+
 main .chobani-values .row {
   margin-bottom: 80px;
 }
@@ -577,7 +584,7 @@ main .chobani-openings .container-fluid > p {
 
   main .chobani-values .chobani-card .chobani-card-desc {
     max-width: 100%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   main .chobani-openings .container-fluid > p {
@@ -609,7 +616,7 @@ main .chobani-openings .container-fluid a {
     height: 30px;
   }
   main .chobani-openings .container-fluid .col-md-4 a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -626,6 +633,7 @@ main .chobani-openings-description .didnt-find {
 
 main .chobani-openings-description p {
   font-family: "Chobani Serif", serif;
+  font-size: 12px;
   color: #1A3C3473;
   width: 95%;
 }
