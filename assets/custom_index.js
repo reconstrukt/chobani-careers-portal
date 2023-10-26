@@ -30,7 +30,8 @@ jQuery(document).ready(function( $ ){
 			{ 
 				breakpoint: 1600,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '300px',
 					slidesToShow: 1,
@@ -40,7 +41,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 1400,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '250px',
 					slidesToShow: 1,
@@ -50,7 +52,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 1200,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '150px',
 					slidesToShow: 1,
@@ -60,7 +63,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 992,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '70px',
 					slidesToShow: 1,
@@ -70,7 +74,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 768,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '0px',
 					slidesToShow: 1,
@@ -80,7 +85,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 480,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '10px',
 					slidesToShow: 1,
@@ -101,7 +107,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 1600,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '250px',
 					slidesToShow: 1,
@@ -111,7 +118,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 1200,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '50px',
 					slidesToShow: 1,
@@ -121,7 +129,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 992,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '70px',
 					slidesToShow: 1,
@@ -131,7 +140,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 768,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '10px',
 					slidesToShow: 1,
@@ -141,7 +151,8 @@ jQuery(document).ready(function( $ ){
 			{
 				breakpoint: 480,
 				settings: {
-					dots: true,
+					dots: false,
+          arrows: true,
 					centerMode: true,
 					centerPadding: '0px',
 					slidesToShow: 1,
