@@ -22,7 +22,8 @@ jQuery(document).ready(function( $ ){
 	$('.chobani-perks .carousel').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true,
+		dots: false,
+    arrows: true,
 		centerMode: true,
 		centerPadding: '480px',
 		responsive: [
@@ -92,7 +93,8 @@ jQuery(document).ready(function( $ ){
 	$('.chobani-culture .carousel').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true,
+		dots: false,
+    arrows: true,
 		centerMode: true,
 		centerPadding: '400px',
 		responsive: [
