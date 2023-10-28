@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -10px;
+    left: -7px;
     border-radius: 0 100% 100% 0;
 }
 [dir='rtl'] .slick-prev
@@ -93,11 +93,11 @@
     content: " ";
     background-image: url(../images/carousel-arrow-left.png);
     background-size: cover;
-    width: 25px;
-    height: 20px;
+    width: 30px;
+    height: 25px;
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 12px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +106,7 @@
 
 .slick-next
 {
-    right: -10px;
+    right: -7px;
     border-radius: 100% 0 0 100%;
 }
 [dir='rtl'] .slick-next
@@ -118,13 +118,13 @@
 {
     display: block;
     content: " ";
-    background-image: url(../images/carousel-arrow-right.png);
+    background-image: url(../images/carousel-arrow-right.svg);
     background-size: cover;
-    width: 25px;
-    height: 20px;
+    width: 30px;
+    height: 25px;
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 12px;
 }
 [dir='rtl'] .slick-next:before
 {
