@@ -21,26 +21,20 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
     background: #ECE8E1;
-    
     z-index: 1;
 }
 .slick-prev:hover,
@@ -79,7 +73,7 @@
 
 .slick-prev
 {
-    left: -7px;
+    left: -25px;
     border-radius: 0 100% 100% 0;
 }
 [dir='rtl'] .slick-prev
@@ -93,11 +87,11 @@
     content: " ";
     background-image: url(../images/carousel-arrow-left.png);
     background-size: cover;
-    width: 30px;
-    height: 25px;
+    width: 22px;
+    height: 17px;
     position: absolute;
     right: 10px;
-    top: 12px;
+    top: 21px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +100,7 @@
 
 .slick-next
 {
-    right: -7px;
+    right: -25px;
     border-radius: 100% 0 0 100%;
 }
 [dir='rtl'] .slick-next
@@ -120,11 +114,11 @@
     content: " ";
     background-image: url(../images/carousel-arrow-right.svg);
     background-size: cover;
-    width: 30px;
-    height: 25px;
+    width: 22px;
+    height: 17px;
     position: absolute;
     left: 10px;
-    top: 12px;
+    top: 21px;
 }
 [dir='rtl'] .slick-next:before
 {
