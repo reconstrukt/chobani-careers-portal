@@ -92,18 +92,6 @@
     position: absolute;
     right: 10px;
     top: 21px;
-    
-    
-    display: block;
-    content: " ";
-    background-image: url(../images/carousel-arrow-right.svg);
-    background-size: cover;
-    width: 22px;
-    height: 17px;
-    position: absolute;
-    left: 10px;
-    top: 21px;
-    
 }
 [dir='rtl'] .slick-prev:before
 {
