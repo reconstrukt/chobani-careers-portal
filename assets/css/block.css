@@ -372,12 +372,13 @@ body.job-page #rss-label {
 	float: initial !important;
 	margin-bottom: 2rem;
 	text-align: center;
-	position: absolute;
+	/* position: absolute; */
 	bottom: -11rem;
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 	z-index: 2;
-	display: block;
+	display: inline-block;
+  width: 100%;
 }
 
 .job-page .jobTitle .applylink a.dialogApplyBtn {
@@ -391,12 +392,12 @@ body.job-page #rss-label {
 	text-align: center;
 	background-color: var(--white) !important;
 	white-space: nowrap;
-	transition: all .3s cubic-bezier(.215,.61,.355,1);
-	position: absolute;
-	bottom: -23px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 2;
+	/* transition: all .3s cubic-bezier(.215,.61,.355,1); */
+	/* position: absolute; */
+	/* bottom: -23px; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+	/* z-index: 2; */
 }
 
 .job-page .jobTitle .applylink a.dialogApplyBtn:hover {
@@ -479,7 +480,7 @@ body.job-page #rss-label {
 
 .job-page .jobLocation {
 	text-align: center;
-	margin: 4rem auto 2rem auto;
+	margin: 2rem auto 2rem auto;
 }
 
 .job-page .jobLocation span {
