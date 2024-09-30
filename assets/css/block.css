@@ -538,7 +538,7 @@ body.search-page main + #innershell #content .inner {
 /* category page */
 
 .talentlanding-page #newFacets .optionsFacet:nth-of-type(2) {
-	display: none;
+	/* display: none; */
 }
 
 .talentlanding-page .searchResultsShell table th:nth-child(3) {
