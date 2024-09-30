@@ -3,7 +3,7 @@ chobaniTheme.header = `<header>
 	<div class="box-shadow container-fluid">
 		<div class="d-flex justify-content-md-between justify-content-center align-items-md-center py-md-4 py-3 px-5">
 			<a href="/" class="navbar-brand d-flex align-items-center">
-				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="6.91in" height=".5in" viewBox="0 0 497.56 36">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="400px" viewBox="0 0 497.56 36">
   <defs>
     <style>
       .cls-1 {
