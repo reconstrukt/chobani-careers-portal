@@ -64,8 +64,7 @@ chobaniTheme.footer = `<footer>
 	<svg
    version="1.1"
    id="svg2"
-   width="711.41333"
-   height="96"
+   width="400"   
    viewBox="0 0 711.41333 96">
   <defs
      id="defs6" />  
@@ -134,6 +133,8 @@ chobaniTheme.footer = `<footer>
 		<div class="mr-md-5">
 			<a href="https://www.chobani.com/terms-and-conditions/" target="_blank">Chobani Terms & Conditions</a>
 		</div>
+  </div>
+  <div class="d-flex flex-md-row flex-column align-items-center c-nav-links mb-2">
     <div class="mr-md-5">
 			<a href="https://www.lacolombe.com/" target="_blank">La Colombe</a>
 		</div>
