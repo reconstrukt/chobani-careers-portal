@@ -12,7 +12,7 @@ jQuery(document).ready(function( $ ){
 		if (!results) return null;
 		if (!results[2]) return '';
     var str = decodeURIComponent(results[2].replace(/\+/g, ' '));
-    return str.replace(/[^a-zA-Z0-9]/g, '');
+    return str.replace(/[^a-zA-Z0-9\s-]/g, '');
 	}
   
 	var mainSection = getParameterByName('category') && getParameterByName('category') !== 'null' ? chobaniTheme.main.replace("%CATEGORY%", getParameterByName('category')) : ``;
