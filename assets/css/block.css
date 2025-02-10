@@ -37,6 +37,10 @@ div.inner > #job-table {
 	display: block !important;
 }
 
+#searchresults {
+    font-size: 16px;
+}
+
 div.inner > #search-wrapper {
 	background: url(https://raw.githubusercontent.com/reconstrukt/chobani-careers-portal/master/assets/images/chobani-careers_banner_right.png), var(--banner-bg);
 	background-size: auto 100%;
