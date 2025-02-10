@@ -142,7 +142,7 @@ chobaniTheme.footer = `<footer>
 			<a href="https://www.lacolombe.com/pages/terms-conditions" target="_blank">La Colombe Terms & Conditions</a>
 		</div>
 		<div>
-			<a href="https://chobani.com/california-employee-job-applicant-privacy-notice" target="_blank">CA Employee and Job Applicant Privacy Notice</a>
+			<a href="https://www.chobani.com/legal-and-regulatory-compliance" target="_blank">CA Employee and Job Applicant Privacy Notice</a>
 		</div>
 	</div>
 	<div class="d-flex copyright justify-content-md-start justify-content-center">
